@@ -24,6 +24,7 @@
 		A10000120000000000000001 /* ftd_catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000120000000000000001 /* ftd_catalog.json */; };
 		A10000130000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000130000000000000001 /* SettingsView.swift */; };
 		A10000140000000000000001 /* PlaylistGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000140000000000000001 /* PlaylistGeneratorView.swift */; };
+		A10000150000000000000001 /* OnboardingSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000150000000000000001 /* OnboardingSplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A20000120000000000000001 /* ftd_catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ftd_catalog.json; sourceTree = "<group>"; };
 		A20000130000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A20000140000000000000001 /* PlaylistGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistGeneratorView.swift; sourceTree = "<group>"; };
+		A20000150000000000000001 /* OnboardingSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				A20000110000000000000001 /* FTDView.swift */,
 				A20000130000000000000001 /* SettingsView.swift */,
 				A20000140000000000000001 /* PlaylistGeneratorView.swift */,
+				A20000150000000000000001 /* OnboardingSplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				A10000110000000000000001 /* FTDView.swift in Sources */,
 				A10000130000000000000001 /* SettingsView.swift in Sources */,
 				A10000140000000000000001 /* PlaylistGeneratorView.swift in Sources */,
+				A10000150000000000000001 /* OnboardingSplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,6 +51,10 @@ final class MusicKitService {
         catalogURL = nil
         statusBanner = nil
 
+        guard record.isOnAppleMusic else {
+            return
+        }
+
         isLookingUp = true
         defer { isLookingUp = false }
 
@@ -303,8 +307,6 @@ final class MusicKitService {
         let recordNorm = normalizeTitle(record.title)
         guard !candidateNorm.isEmpty, !recordNorm.isEmpty else { return false }
         return candidateNorm == recordNorm
-            || candidateNorm.hasPrefix(recordNorm)
-            || recordNorm.hasPrefix(candidateNorm)
     }
 
     private static func normalizeTitle(_ raw: String) -> String {

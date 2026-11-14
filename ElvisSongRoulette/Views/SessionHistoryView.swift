@@ -1,9 +1,10 @@
 import SwiftUI
 
 /// Displays deep recording session data, personnel credits, and historical context
-/// derived from the bundled session ledger database.
+/// derived from the bundled session ledger database and enriched with live Apple Music metadata.
 struct SessionHistoryView: View {
     let song: SongRecord
+    var appleMusicMetadata: AppleMusicMetadata? = nil
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -12,6 +13,9 @@ struct SessionHistoryView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     headerCard
                     recordingDetailsCard
+                    if appleMusicMetadata != nil {
+                        appleMusicCatalogCard
+                    }
                     personnelCard
                     backstoryCard
                 }
@@ -33,16 +37,31 @@ struct SessionHistoryView: View {
 
     private var headerCard: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(song.era.uppercased())
-                .font(.caption.weight(.bold))
-                .tracking(1.2)
-                .foregroundStyle(RetroTheme.vegasGold)
+            HStack {
+                Text(song.era.uppercased())
+                    .font(.caption.weight(.bold))
+                    .tracking(1.2)
+                    .foregroundStyle(RetroTheme.vegasGold)
+                Spacer()
+                if appleMusicMetadata != nil {
+                    Label("Apple Music", systemImage: "music.note")
+                        .font(.caption2.weight(.semibold))
+                        .foregroundStyle(RetroTheme.vegasGold)
+                        .padding(.horizontal, 8)
+                        .padding(.vertical, 3)
+                        .background(RetroTheme.vegasGold.opacity(0.14))
+                        .clipShape(Capsule())
+                }
+            }
 
-            Text(song.title)
+            Text(appleMusicMetadata?.title ?? song.title)
                 .font(.system(.title2, design: .serif, weight: .bold))
                 .foregroundStyle(RetroTheme.sunCream)
 
-            Text("\(song.artist) • \(song.album) (\(String(song.year)))")
+            let displayArtist = appleMusicMetadata?.artistName ?? song.artist
+            let displayAlbum = appleMusicMetadata?.albumTitle ?? song.album
+            let displayYear = appleMusicMetadata?.releaseYear ?? song.year
+            Text("\(displayArtist) • \(displayAlbum) (\(String(displayYear)))")
                 .font(.subheadline)
                 .foregroundStyle(RetroTheme.mutedCream)
         }
@@ -68,6 +87,40 @@ struct SessionHistoryView: View {
         .padding(16)
         .background(RetroTheme.cardSurface)
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+    }
+
+    @ViewBuilder
+    private var appleMusicCatalogCard: some View {
+        if let meta = appleMusicMetadata {
+            VStack(alignment: .leading, spacing: 14) {
+                sectionHeader("Apple Music Release Data", icon: "music.note.list")
+
+                if let album = meta.albumTitle, !album.isEmpty {
+                    detailRow(label: "Release / Album", value: album, icon: "opticaldisc")
+                }
+                if let releaseDate = meta.formattedReleaseDate {
+                    detailRow(label: "Release Date", value: releaseDate, icon: "calendar")
+                }
+                if let composer = meta.composerName, !composer.isEmpty {
+                    detailRow(label: "Songwriters / Composer", value: composer, icon: "pencil.and.outline")
+                }
+                if !meta.genres.isEmpty {
+                    detailRow(label: "Genre", value: meta.genres.joined(separator: ", "), icon: "tag")
+                }
+                if let duration = meta.formattedDuration {
+                    detailRow(label: "Duration", value: duration, icon: "clock")
+                }
+                if let trackPos = meta.trackPositionLabel {
+                    detailRow(label: "Album Position", value: trackPos, icon: "number")
+                }
+                if let isrc = meta.isrc, !isrc.isEmpty {
+                    detailRow(label: "ISRC", value: isrc, icon: "barcode")
+                }
+            }
+            .padding(16)
+            .background(RetroTheme.cardSurface)
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        }
     }
 
     private var personnelCard: some View {
@@ -115,6 +168,22 @@ struct SessionHistoryView: View {
                 .font(.body)
                 .lineSpacing(5)
                 .foregroundStyle(RetroTheme.sunCream.opacity(0.92))
+
+            if let editorial = appleMusicMetadata?.editorialNotes, !editorial.isEmpty {
+                Divider()
+                    .background(Color.white.opacity(0.08))
+                    .padding(.vertical, 4)
+
+                Text("APPLE MUSIC NOTES")
+                    .font(.caption.weight(.bold))
+                    .tracking(1.1)
+                    .foregroundStyle(RetroTheme.vegasGold)
+
+                Text(editorial)
+                    .font(.subheadline)
+                    .lineSpacing(4)
+                    .foregroundStyle(RetroTheme.mutedCream)
+            }
         }
         .padding(16)
         .background(RetroTheme.cardSurface)

@@ -58,7 +58,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showingSessionHistory) {
             if let currentSong {
-                SessionHistoryView(song: currentSong)
+                SessionHistoryView(song: currentSong, appleMusicMetadata: musicService.resolvedMetadata)
             }
         }
         .sheet(isPresented: $showingPlaylistBuilder) {

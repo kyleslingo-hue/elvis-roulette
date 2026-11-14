@@ -11,6 +11,7 @@ import UIKit
 final class MusicKitService {
     var authorizationStatus: MusicAuthorization.Status = MusicAuthorization.currentStatus
     var resolvedSong: Song?
+    var resolvedMetadata: AppleMusicMetadata?
     var resolvedTitle: String?
     var resolvedAlbumTitle: String?
     var artworkURL: URL?
@@ -45,6 +46,7 @@ final class MusicKitService {
     func lookupCatalogSong(for record: SongRecord) async {
         stopPreview()
         resolvedSong = nil
+        resolvedMetadata = nil
         resolvedTitle = nil
         resolvedAlbumTitle = nil
         artworkURL = nil
@@ -74,6 +76,20 @@ final class MusicKitService {
                     artworkURL = match.artwork?.url(width: 600, height: 600)
                     previewURL = match.previewAssets?.first?.url
                     catalogURL = match.url
+                    resolvedMetadata = AppleMusicMetadata(
+                        title: match.title,
+                        artistName: match.artistName,
+                        albumTitle: match.albumTitle,
+                        releaseDate: match.releaseDate,
+                        genres: match.genreNames.filter { !$0.isEmpty && $0.caseInsensitiveCompare("Music") != .orderedSame },
+                        composerName: match.composerName,
+                        editorialNotes: match.editorialNotes?.standard ?? match.editorialNotes?.short,
+                        duration: match.duration,
+                        trackNumber: match.trackNumber,
+                        discNumber: match.discNumber,
+                        isrc: match.isrc,
+                        isFromMusicKit: true
+                    )
                 }
             } catch {
                 // Fall back to public iTunes catalog lookup below (e.g., in Simulator without MusicKit signing)
@@ -175,6 +191,25 @@ final class MusicKitService {
             }
             if catalogURL == nil, let trackView = match.trackViewUrl {
                 catalogURL = URL(string: trackView)
+            }
+            if resolvedMetadata == nil {
+                let parsedDate = match.releaseDate.flatMap { ISO8601DateFormatter().date(from: $0) }
+                let genres = [match.primaryGenreName].compactMap { $0 }.filter { !$0.isEmpty && $0.caseInsensitiveCompare("Music") != .orderedSame }
+                let duration = match.trackTimeMillis.map { TimeInterval($0) / 1000.0 }
+                resolvedMetadata = AppleMusicMetadata(
+                    title: match.trackName ?? record.title,
+                    artistName: match.artistName ?? record.artist,
+                    albumTitle: match.collectionName,
+                    releaseDate: parsedDate,
+                    genres: genres,
+                    composerName: nil,
+                    editorialNotes: nil,
+                    duration: duration,
+                    trackNumber: match.trackNumber,
+                    discNumber: match.discNumber,
+                    isrc: nil,
+                    isFromMusicKit: false
+                )
             }
         } catch {
             // Ignore network errors silently
@@ -332,6 +367,48 @@ final class MusicKitService {
     }
 }
 
+struct AppleMusicMetadata: Equatable {
+    let title: String
+    let artistName: String
+    let albumTitle: String?
+    let releaseDate: Date?
+    let genres: [String]
+    let composerName: String?
+    let editorialNotes: String?
+    let duration: TimeInterval?
+    let trackNumber: Int?
+    let discNumber: Int?
+    let isrc: String?
+    let isFromMusicKit: Bool
+
+    var releaseYear: Int? {
+        guard let releaseDate else { return nil }
+        return Calendar.current.component(.year, from: releaseDate)
+    }
+
+    var formattedReleaseDate: String? {
+        guard let releaseDate else { return nil }
+        return releaseDate.formatted(date: .long, time: .omitted)
+    }
+
+    var formattedDuration: String? {
+        guard let duration, duration.isFinite, duration > 0 else { return nil }
+        let totalSeconds = Int(duration.rounded())
+        return String(format: "%d:%02d", totalSeconds / 60, totalSeconds % 60)
+    }
+
+    var trackPositionLabel: String? {
+        switch (discNumber, trackNumber) {
+        case let (disc?, track?) where disc > 1:
+            return "Disc \(disc), Track \(track)"
+        case let (_, track?):
+            return "Track \(track)"
+        default:
+            return nil
+        }
+    }
+}
+
 private struct ITunesSearchResponse: Decodable {
     let results: [ITunesTrack]
 }
@@ -343,4 +420,9 @@ private struct ITunesTrack: Decodable {
     let artworkUrl100: String?
     let previewUrl: String?
     let trackViewUrl: String?
+    let releaseDate: String?
+    let primaryGenreName: String?
+    let trackTimeMillis: Int?
+    let trackNumber: Int?
+    let discNumber: Int?
 }

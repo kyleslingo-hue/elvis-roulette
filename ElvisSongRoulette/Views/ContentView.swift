@@ -3,16 +3,15 @@ import SwiftUI
 struct ContentView: View {
     var musicService: MusicKitService
     var database: SongDatabase
+    @Binding var playlistQueue: [SongRecord]
 
     @AppStorage("autoPlayOnSpin") private var autoPlayOnSpin = true
     @AppStorage("includeUnavailableTracks") private var includeUnavailableTracks = true
     @AppStorage("defaultArtistFilter") private var defaultArtistFilterRaw = ArtistFilter.all.rawValue
 
     @State private var selectedMood: Mood? = nil
-    @State private var moodInput: String = ""
     @State private var artistFilter: ArtistFilter = .all
     @State private var currentSong: SongRecord?
-    @State private var playlistQueue: [SongRecord] = []
     @State private var isAutoplaySessionActive = false
     @State private var spinTask: Task<Void, Never>?
 
@@ -69,7 +68,7 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $showingPlaylistBuilder) {
-            PlaylistQueueView(queue: $playlistQueue, musicService: musicService)
+            PlaylistQueueView(queue: $playlistQueue, musicService: musicService, database: database, isPresentedAsSheet: true)
         }
     }
 
@@ -126,35 +125,6 @@ struct ContentView: View {
 
     private var moodSelectorSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            // Free-text mood input
-            HStack(spacing: 10) {
-                Image(systemName: "sparkles")
-                    .foregroundStyle(RetroTheme.vegasGold)
-                TextField("Type a mood (e.g. late night, restless, Graceland)...", text: $moodInput)
-                    .textFieldStyle(.plain)
-                    .foregroundStyle(RetroTheme.sunCream)
-                    .submitLabel(.search)
-                    .onSubmit { spinTrack() }
-
-                if !moodInput.isEmpty {
-                    Button {
-                        moodInput = ""
-                        spinTrack()
-                    } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .foregroundStyle(RetroTheme.mutedCream)
-                    }
-                }
-            }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 11)
-            .background(RetroTheme.cardSurface)
-            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-            .overlay(
-                RoundedRectangle(cornerRadius: 12, style: .continuous)
-                    .stroke(RetroTheme.vegasGold.opacity(0.3), lineWidth: 1)
-            )
-
             // Mood pills
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
@@ -453,7 +423,7 @@ struct ContentView: View {
 
         guard let next = database.spin(
             mood: selectedMood,
-            query: moodInput,
+            query: "",
             artistFilter: artistFilter,
             excludingID: currentSong?.id
         ) else {
@@ -488,5 +458,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(musicService: MusicKitService(), database: SongDatabase())
+    ContentView(musicService: MusicKitService(), database: SongDatabase(), playlistQueue: .constant([]))
 }

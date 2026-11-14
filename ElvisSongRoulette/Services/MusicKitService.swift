@@ -30,6 +30,8 @@ final class MusicKitService {
     private var endObserver: NSObjectProtocol?
     private var isUsingApplicationMusicPlayer = false
     private var appPlayerMonitorTask: Task<Void, Never>?
+    private var lastLookedUpRecordID: String?
+    private var cachedCanPlayCatalogContent: Bool?
 
     var isAuthorized: Bool {
         authorizationStatus == .authorized
@@ -47,6 +49,7 @@ final class MusicKitService {
 
     func lookupCatalogSong(for record: SongRecord) async {
         stopPreview()
+        lastLookedUpRecordID = record.id
         resolvedSong = nil
         resolvedMetadata = nil
         resolvedTitle = nil
@@ -99,7 +102,8 @@ final class MusicKitService {
             }
         }
 
-        if artworkURL == nil || previewURL == nil {
+        let needsFallbackPreview = resolvedSong == nil || cachedCanPlayCatalogContent == false
+        if artworkURL == nil || (previewURL == nil && needsFallbackPreview) {
             await fallbackITunesLookup(for: record)
         }
     }
@@ -117,28 +121,39 @@ final class MusicKitService {
 
     @discardableResult
     func play(record: SongRecord) async -> Bool {
+        isLookingUp = true
+        defer { isLookingUp = false }
+
         authorizationStatus = MusicAuthorization.currentStatus
-        if (resolvedSong == nil && authorizationStatus == .authorized) || (resolvedSong == nil && previewURL == nil) {
+        if lastLookedUpRecordID != record.id || (resolvedSong == nil && previewURL == nil) {
             await lookupCatalogSong(for: record)
         }
 
         #if !targetEnvironment(simulator)
         // Try full Apple Music playback on physical devices when authorized & subscribed
-        if authorizationStatus == .authorized,
-           let song = resolvedSong,
-           let subscription = try? await MusicSubscription.current,
-           subscription.canPlayCatalogContent {
-            do {
-                previewProgress = 0
-                ApplicationMusicPlayer.shared.queue = [song]
-                try await ApplicationMusicPlayer.shared.play()
-                isUsingApplicationMusicPlayer = true
-                isPlayingPreview = true
-                statusBanner = nil
-                startApplicationPlayerMonitor()
-                return true
-            } catch {
-                statusBanner = "Apple Music playback error: \(error.localizedDescription)"
+        if authorizationStatus == .authorized, let song = resolvedSong {
+            let canPlay: Bool
+            if let cached = cachedCanPlayCatalogContent {
+                canPlay = cached
+            } else {
+                let fetched = (try? await MusicSubscription.current)?.canPlayCatalogContent ?? false
+                cachedCanPlayCatalogContent = fetched
+                canPlay = fetched
+            }
+
+            if canPlay {
+                do {
+                    previewProgress = 0
+                    ApplicationMusicPlayer.shared.queue = [song]
+                    try await ApplicationMusicPlayer.shared.play()
+                    isUsingApplicationMusicPlayer = true
+                    isPlayingPreview = true
+                    statusBanner = nil
+                    startApplicationPlayerMonitor()
+                    return true
+                } catch {
+                    statusBanner = "Apple Music playback error: \(error.localizedDescription)"
+                }
             }
         }
         #endif
@@ -189,7 +204,9 @@ final class MusicKitService {
     private func startAVPlayer(url: URL) {
         configureAudioSession()
         let item = AVPlayerItem(url: url)
+        item.preferredForwardBufferDuration = 1.5
         let avPlayer = AVPlayer(playerItem: item)
+        avPlayer.automaticallyWaitsToMinimizeStalling = false
         player = avPlayer
         previewProgress = 0
         isPlayingPreview = true

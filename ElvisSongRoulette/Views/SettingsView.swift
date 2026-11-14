@@ -155,6 +155,16 @@ struct SettingsView: View {
             }
             .padding(.vertical, 4)
 
+            VStack(alignment: .leading, spacing: 6) {
+                Text("Disclaimer")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(RetroTheme.sunCream)
+                Text("This is an unofficial fan project and is not affiliated with, endorsed by, or associated with Elvis Presley Enterprises (EPE), Sony Music, Authentic Brands Group (ABG), RCA Records, Capitol Records, or the Estates of Elvis Presley or Lisa Marie Presley.")
+                    .font(.caption)
+                    .foregroundStyle(RetroTheme.mutedCream)
+            }
+            .padding(.vertical, 4)
+
             statRow("App Version", value: appVersion)
         } header: {
             Text("About")

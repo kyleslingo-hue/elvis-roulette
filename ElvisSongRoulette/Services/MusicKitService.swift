@@ -156,12 +156,14 @@ final class MusicKitService {
         appPlayerMonitorTask?.cancel()
         appPlayerMonitorTask = Task { @MainActor [weak self] in
             var sawPlaying = false
+            var stoppedTicks = 0
             while !Task.isCancelled {
                 try? await Task.sleep(for: .milliseconds(250))
                 guard !Task.isCancelled, let self, self.isUsingApplicationMusicPlayer else { break }
                 let status = ApplicationMusicPlayer.shared.state.playbackStatus
                 if status == .playing {
                     sawPlaying = true
+                    stoppedTicks = 0
                     if let duration = self.resolvedMetadata?.duration, duration > 1 {
                         let current = ApplicationMusicPlayer.shared.playbackTime
                         if current.isFinite && current >= 0 && current <= duration {
@@ -170,9 +172,15 @@ final class MusicKitService {
                         }
                     }
                 } else if sawPlaying && status == .stopped {
-                    self.stopPreview()
-                    self.onTrackFinished?()
-                    break
+                    // Require sustained .stopped state (1s) so brief buffering transitions don't skip tracks
+                    stoppedTicks += 1
+                    if stoppedTicks >= 4 {
+                        self.stopPreview()
+                        self.onTrackFinished?()
+                        break
+                    }
+                } else {
+                    stoppedTicks = 0
                 }
             }
         }
@@ -192,8 +200,9 @@ final class MusicKitService {
             queue: .main
         ) { [weak self] _ in
             Task { @MainActor in
-                self?.stopPreview()
-                self?.onTrackFinished?()
+                guard let self, self.player?.currentItem === item else { return }
+                self.stopPreview()
+                self.onTrackFinished?()
             }
         }
 

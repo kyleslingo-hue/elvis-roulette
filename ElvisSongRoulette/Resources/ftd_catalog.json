@@ -1,0 +1,2322 @@
+[
+  {
+    "id": "ftd-001-burbank-68",
+    "catalogNumber": "#001",
+    "title": "Burbank 68",
+    "releaseDate": "07/1999",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/burbank68150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/burbank68.htm"
+  },
+  {
+    "id": "ftd-002-out-in-hollywood",
+    "catalogNumber": "#002",
+    "title": "Out In Hollywood",
+    "releaseDate": "12/1999",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/outinhollywood150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/outinhollywood.htm"
+  },
+  {
+    "id": "ftd-003-in-a-private-moment",
+    "catalogNumber": "#003",
+    "title": "In A Private Moment",
+    "releaseDate": "12/1999",
+    "releaseType": "home recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/privatemoment150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/privatemoment.htm"
+  },
+  {
+    "id": "ftd-004-the-jungle-room-sessions",
+    "catalogNumber": "#004",
+    "title": "The Jungle Room Sessions",
+    "releaseDate": "04/2000",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/jungleroom150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/jungleroom.htm"
+  },
+  {
+    "id": "ftd-005-long-lonely-highway",
+    "catalogNumber": "#005",
+    "title": "Long Lonely Highway",
+    "releaseDate": "06/2000",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/longlonelyhighway150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/longlonelyhighway.htm"
+  },
+  {
+    "id": "ftd-006-tucson-76",
+    "catalogNumber": "#006",
+    "title": "Tucson \u00b476",
+    "releaseDate": "10/2000",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/tuscon76150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/tuscon76.htm"
+  },
+  {
+    "id": "ftd-007-too-much-monkey-business",
+    "catalogNumber": "#007",
+    "title": "Too Much Monkey Business",
+    "releaseDate": "11/2000",
+    "releaseType": "rem\u00edx",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/toomuchmonkey150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/toomuchmonkey.htm"
+  },
+  {
+    "id": "ftd-008-one-night-in-vegas",
+    "catalogNumber": "#008",
+    "title": "One Night In Vegas",
+    "releaseDate": "12/2000",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/onenightinvegas150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/onenightinvegas.htm"
+  },
+  {
+    "id": "ftd-009-6363-sunset",
+    "catalogNumber": "#009",
+    "title": "6363 Sunset",
+    "releaseDate": "03/2001",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/sunset150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/6363sunset.htm"
+  },
+  {
+    "id": "ftd-010-easter-special",
+    "catalogNumber": "#010",
+    "title": "Easter Special",
+    "releaseDate": "04/2001",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/easterspecial150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/easterspecial.htm"
+  },
+  {
+    "id": "ftd-011-dixieland-rocks",
+    "catalogNumber": "#011",
+    "title": "Dixieland Rocks",
+    "releaseDate": "07/2001",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/dicielandrocks150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/dixielandrocks.htm"
+  },
+  {
+    "id": "ftd-012-the-way-it-was-an-audiovisual-documentary",
+    "catalogNumber": "#012",
+    "title": "The Way It Was - An Audiovisual Documentary",
+    "releaseDate": "08/2001",
+    "releaseType": "rehearsals",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/TheWayItWas150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ttwiwas.htm"
+  },
+  {
+    "id": "ftd-013-memphis-sessions-69",
+    "catalogNumber": "#013",
+    "title": "Memphis Sessions \u00b469",
+    "releaseDate": "10/2001",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/memphissessions150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/memphissessions.htm"
+  },
+  {
+    "id": "ftd-014-silver-screen-stereo",
+    "catalogNumber": "#014",
+    "title": "Silver Screen Stereo",
+    "releaseDate": "11/2001",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/silverscreen150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/silverscreen.htm"
+  },
+  {
+    "id": "ftd-015-it-s-midnight",
+    "catalogNumber": "#015",
+    "title": "It\u00b4s Midnight",
+    "releaseDate": "11/2001",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/midnight150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/midnight.htm"
+  },
+  {
+    "id": "ftd-016-fame-and-fortune",
+    "catalogNumber": "#016",
+    "title": "Fame And Fortune",
+    "releaseDate": "04/2002",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fameandfortune150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fameandfortune.htm"
+  },
+  {
+    "id": "ftd-017-spring-tours-77",
+    "catalogNumber": "#017",
+    "title": "Spring Tours 77",
+    "releaseDate": "05/2002",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/springtours150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/springtours.htm"
+  },
+  {
+    "id": "ftd-018-the-nashville-marathon",
+    "catalogNumber": "#018",
+    "title": "The Nashville Marathon",
+    "releaseDate": "07/2002",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/nashville150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/nashville.htm"
+  },
+  {
+    "id": "ftd-019-dinner-at-eight",
+    "catalogNumber": "#019",
+    "title": "Dinner At Eight",
+    "releaseDate": "11/2002",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/dinnerat8150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/dinnerat8.htm"
+  },
+  {
+    "id": "ftd-020-elvis-at-the-international",
+    "catalogNumber": "#020",
+    "title": "Elvis At The International",
+    "releaseDate": "12/2002",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/international150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/international.htm"
+  },
+  {
+    "id": "ftd-021-elvis-new-year-s-eve",
+    "catalogNumber": "#021",
+    "title": "Elvis: New Year\u00b4s Eve",
+    "releaseDate": "03/2003",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/newyearseve150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/newyearseve.htm"
+  },
+  {
+    "id": "ftd-022-fun-in-acapulco",
+    "catalogNumber": "#022",
+    "title": "Fun In Acapulco",
+    "releaseDate": "04/2003",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/funinacapulco150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/funinacapulco.htm"
+  },
+  {
+    "id": "ftd-023-girl-happy",
+    "catalogNumber": "#023",
+    "title": "Girl Happy",
+    "releaseDate": "04/2003",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/girlhappy150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/girlhappy.htm"
+  },
+  {
+    "id": "ftd-024-studio-b",
+    "catalogNumber": "#024",
+    "title": "Studio B",
+    "releaseDate": "04/2003",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/studiob-150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/studiob.htm"
+  },
+  {
+    "id": "ftd-025-it-happend-at-the-worlds-fair",
+    "catalogNumber": "#025",
+    "title": "It Happend At The Worlds Fair",
+    "releaseDate": "05/2003",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/worldsfair150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/worldsfair.htm"
+  },
+  {
+    "id": "ftd-026-dragonheart",
+    "catalogNumber": "#026",
+    "title": "Dragonheart",
+    "releaseDate": "06/2003",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/dragonheart150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/dragonheart.htm"
+  },
+  {
+    "id": "ftd-027-takin-tahoe-tonight",
+    "catalogNumber": "#027",
+    "title": "Takin\u00b4 Tahoe Tonight!",
+    "releaseDate": "10/2003",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/tahohe150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/tahoe.htm"
+  },
+  {
+    "id": "ftd-028-viva-las-vegas",
+    "catalogNumber": "#028",
+    "title": "Viva Las Vegas",
+    "releaseDate": "11/2003",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/vivalasvegas150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/vivalasvegas.htm"
+  },
+  {
+    "id": "ftd-029-harum-scarum",
+    "catalogNumber": "#029",
+    "title": "Harum Scarum",
+    "releaseDate": "11/2003",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/harumscarum150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/harumscarum.htm"
+  },
+  {
+    "id": "ftd-030-frankie-and-johnny",
+    "catalogNumber": "#030",
+    "title": "Frankie And Johnny",
+    "releaseDate": "11/2003",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/frankieandjohnny150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/frankieandjohnny.htm"
+  },
+  {
+    "id": "ftd-031-so-high",
+    "catalogNumber": "#031",
+    "title": "So High",
+    "releaseDate": "12/2003",
+    "releaseType": "studio outtakes",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/sohigh150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/sohigh.htm"
+  },
+  {
+    "id": "ftd-032-the-impossible-dream",
+    "catalogNumber": "#032",
+    "title": "The Impossible Dream",
+    "releaseDate": "04/2004",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theimpossibledream150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theimpossibledream.htm"
+  },
+  {
+    "id": "ftd-033-elvis-as-recorded-live-on-stage-in-memphis",
+    "catalogNumber": "#033",
+    "title": "Elvis As Recorded Live On Stage In Memphis",
+    "releaseDate": "04/2004",
+    "releaseType": "reissue / live recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/recordedliveonstage150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/asrecorded.htm"
+  },
+  {
+    "id": "ftd-034-spinout",
+    "catalogNumber": "#034",
+    "title": "Spinout",
+    "releaseDate": "05/2004",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/spinout150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/spinout.htm"
+  },
+  {
+    "id": "ftd-035-flashback-an-audiovisual-documentary",
+    "catalogNumber": "#035",
+    "title": "Flashback - An Audiovisual Documentary",
+    "releaseDate": "05/2004",
+    "releaseType": "studio outtakes",
+    "series": "Book",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/flashback150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/flashback.htm"
+  },
+  {
+    "id": "ftd-036-polk-salad-annie",
+    "catalogNumber": "#036",
+    "title": "Polk Salad Annie",
+    "releaseDate": "07/2004",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/polksalad150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/polksalad.htm"
+  },
+  {
+    "id": "ftd-037-paradise-hawaiian-style",
+    "catalogNumber": "#037",
+    "title": "Paradise, Hawaiian Style",
+    "releaseDate": "07/2004",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/paradisehawaiian150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/parradisehawaiin.htm"
+  },
+  {
+    "id": "ftd-038-double-trouble",
+    "catalogNumber": "#038",
+    "title": "Double Trouble",
+    "releaseDate": "10/2004",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/doubletrouble150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/doubletrouble.htm"
+  },
+  {
+    "id": "ftd-039-closing-night",
+    "catalogNumber": "#039",
+    "title": "Closing Night",
+    "releaseDate": "10/2004",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/closingnight150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/closingnight.htm"
+  },
+  {
+    "id": "ftd-040-follow-that-dream",
+    "catalogNumber": "#040",
+    "title": "Follow That Dream",
+    "releaseDate": "11/2004",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/followthatdream150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/followthatdream.htm"
+  },
+  {
+    "id": "ftd-041-kid-galahad",
+    "catalogNumber": "#041",
+    "title": "Kid Galahad",
+    "releaseDate": "11/2004",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kidgalahad150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kidgalahad.htm"
+  },
+  {
+    "id": "ftd-042-elvis-on-tour-the-rehearsals",
+    "catalogNumber": "#042",
+    "title": "Elvis On Tour - The Rehearsals",
+    "releaseDate": "12/2004",
+    "releaseType": "rehearsals",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ontour150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ontour.htm"
+  },
+  {
+    "id": "ftd-043-elvis-is-back",
+    "catalogNumber": "#043",
+    "title": "Elvis Is Back",
+    "releaseDate": "04/2005",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisisback.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisisback.htm"
+  },
+  {
+    "id": "ftd-044-rockin-across-texas-an-audiovisual-journey-1954-1977",
+    "catalogNumber": "#044",
+    "title": "Rockin' Across Texas- An Audiovisual Journey 1954 - 1977",
+    "releaseDate": "04/2005",
+    "releaseType": "live recordings",
+    "series": "Book",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/rockinacrosstexas.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/rockinacrosstexas.htm"
+  },
+  {
+    "id": "ftd-045-big-boss-man",
+    "catalogNumber": "#045",
+    "title": "Big Boss Man",
+    "releaseDate": "04/2005",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/bigbossman.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/bigbossman.htm"
+  },
+  {
+    "id": "ftd-046-all-shook-up",
+    "catalogNumber": "#046",
+    "title": "All Shook Up",
+    "releaseDate": "07/2005",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/allshookupthumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/allshookup.htm"
+  },
+  {
+    "id": "ftd-047-tickle-me",
+    "catalogNumber": "#047",
+    "title": "Tickle Me",
+    "releaseDate": "07/2005",
+    "releaseType": "soundtracks / studio recordings",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ticklemethumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/tickleme.htm"
+  },
+  {
+    "id": "ftd-048-today",
+    "catalogNumber": "#048",
+    "title": "Today",
+    "releaseDate": "07/2005",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/todaythumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/today.htm"
+  },
+  {
+    "id": "ftd-049-summer-festival",
+    "catalogNumber": "#049",
+    "title": "Summer Festival",
+    "releaseDate": "10/2005",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/summerfestival100.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/summerfestival.htm"
+  },
+  {
+    "id": "ftd-050-southern-nights",
+    "catalogNumber": "#050",
+    "title": "Southern Nights",
+    "releaseDate": "01/2006",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/southernnights.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/southernnights.htm"
+  },
+  {
+    "id": "ftd-051-loving-you",
+    "catalogNumber": "#051",
+    "title": "Loving You",
+    "releaseDate": "01/2006",
+    "releaseType": "soundtracks",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lovingyou.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lovingyou.htm"
+  },
+  {
+    "id": "ftd-052-made-in-memphis",
+    "catalogNumber": "#052",
+    "title": "Made In Memphis",
+    "releaseDate": "04/2006",
+    "releaseType": "studio recordings / home recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/madeinmemphis-tumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/madeinmemphis.htm"
+  },
+  {
+    "id": "ftd-053-something-for-everybody",
+    "catalogNumber": "#053",
+    "title": "Something For Everybody",
+    "releaseDate": "04/2006",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/somethingforeverybody-thumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/somethingforeverybody.htm"
+  },
+  {
+    "id": "ftd-054-elvis-presley-special-edition",
+    "catalogNumber": "#054",
+    "title": "Elvis Presley - Special Edition",
+    "releaseDate": "07/2006",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvispresley-thumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvispresley.htm"
+  },
+  {
+    "id": "ftd-055-i-found-my-thrill",
+    "catalogNumber": "#055",
+    "title": "I Found My Thrill",
+    "releaseDate": "07/2006",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ifoundmythrill150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ifoundmythrill.htm"
+  },
+  {
+    "id": "ftd-056-clambake",
+    "catalogNumber": "#056",
+    "title": "Clambake",
+    "releaseDate": "07/2006",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/clambake-thumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/clambake.htm"
+  },
+  {
+    "id": "ftd-057-let-yourself-go",
+    "catalogNumber": "#057",
+    "title": "Let Yourself Go!",
+    "releaseDate": "10/2006",
+    "releaseType": "live recordings / rehearsals",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/letyourselfgothumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/letyourselfgo.htm"
+  },
+  {
+    "id": "ftd-058-his-hand-in-mine",
+    "catalogNumber": "#058",
+    "title": "His Hand In Mine",
+    "releaseDate": "12/2006",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hishandinmine.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hishandinmine.htm"
+  },
+  {
+    "id": "ftd-059-writing-for-the-king",
+    "catalogNumber": "#059",
+    "title": "Writing For The King",
+    "releaseDate": "12/2006",
+    "releaseType": "live recordings / demos",
+    "series": "Book",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/writingfortheking.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/writingfortheking.htm"
+  },
+  {
+    "id": "ftd-060-unchained-melody",
+    "catalogNumber": "#060",
+    "title": "Unchained Melody",
+    "releaseDate": "01/2007",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/unchainedmelody.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/unchainedmelody.htm"
+  },
+  {
+    "id": "ftd-061-an-american-trilogy",
+    "catalogNumber": "#061",
+    "title": "An American Trilogy",
+    "releaseDate": "04/2007",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/anamericantrilogy-thumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/anamericantrilogy.htm"
+  },
+  {
+    "id": "ftd-062-50-000-000-elvis-fans-can-t-be-wrong-elvis-golden-records-vol-2",
+    "catalogNumber": "#062",
+    "title": "50.000.000 Elvis Fans Can't Be Wrong -\u00a0 Elvis' Golden Records Vol. 2",
+    "releaseDate": "04/2007",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/50000elvisfans-thumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/50000elvisfanscantbewrong.htm"
+  },
+  {
+    "id": "ftd-063-live-in-l-a-an-audiovisual-documentary",
+    "catalogNumber": "#063",
+    "title": "Live In L.A.- An Audiovisual Documentary",
+    "releaseDate": "04/2007",
+    "releaseType": "live recordings",
+    "series": "Book",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/liveinla-thumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/liveinla.htm"
+  },
+  {
+    "id": "ftd-064-raised-on-rock",
+    "catalogNumber": "#064",
+    "title": "Raised On Rock",
+    "releaseDate": "07/2007",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/raisedonrock.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/raisedonrock.htm"
+  },
+  {
+    "id": "ftd-065-easy-come-easy-go",
+    "catalogNumber": "#065",
+    "title": "Easy Come, Easy Go",
+    "releaseDate": "07/2007",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/easycomeeasygo.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/easycomeeasygo.htm"
+  },
+  {
+    "id": "ftd-066-i-sing-all-kinds",
+    "catalogNumber": "#066",
+    "title": "I Sing All Kinds",
+    "releaseDate": "07/2007",
+    "releaseType": "studio recordings",
+    "series": "Studio Recordings",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/isingallkinds.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/isingallkinds.htm"
+  },
+  {
+    "id": "ftd-067-pot-luck-with-elvis",
+    "catalogNumber": "#067",
+    "title": "Pot Luck with Elvis",
+    "releaseDate": "11/2007",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/potluck-thumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/potluck.htm"
+  },
+  {
+    "id": "ftd-068-girls-girls-girls",
+    "catalogNumber": "#068",
+    "title": "Girls! Girls Girls!",
+    "releaseDate": "11/2007",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/girlsgirlsgirls-thumb.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/girlsgirlsgirls.htm"
+  },
+  {
+    "id": "ftd-069-wild-in-the-country",
+    "catalogNumber": "#069",
+    "title": "Wild In The Country",
+    "releaseDate": "01/2008",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/wildinthecountryt150.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/wildinthecountry.htm"
+  },
+  {
+    "id": "ftd-070-that-s-the-way-it-was",
+    "catalogNumber": "#070",
+    "title": "That's The Way It Was",
+    "releaseDate": "04/2008",
+    "releaseType": "rehearsals",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thatstehwayitwas2-th.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ttwiwas2.htm"
+  },
+  {
+    "id": "ftd-071-that-s-the-way-it-is",
+    "catalogNumber": "#071",
+    "title": "That's The Way It Is",
+    "releaseDate": "04/2008",
+    "releaseType": "rehearsals, live and",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thatsthewayitis-th.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thatsthewayitis.htm"
+  },
+  {
+    "id": "ftd-072-love-letters",
+    "catalogNumber": "#072",
+    "title": "Love Letters",
+    "releaseDate": "08/2008",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/loveletters-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/loveletters.htm"
+  },
+  {
+    "id": "ftd-073-elvis-sings-memphis-tennessee",
+    "catalogNumber": "#073",
+    "title": "Elvis Sings Memphis, Tennessee",
+    "releaseDate": "08/2008",
+    "releaseType": "studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvissingsmemphistennessee-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvissingsmemphistennessee.htm"
+  },
+  {
+    "id": "ftd-074-america",
+    "catalogNumber": "#074",
+    "title": "America",
+    "releaseDate": "08/2008",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/america-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/america.htm"
+  },
+  {
+    "id": "ftd-075-nevada-nights",
+    "catalogNumber": "#075",
+    "title": "Nevada Nights",
+    "releaseDate": "10/2008",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/nevadanights-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/nevadanights.htm"
+  },
+  {
+    "id": "ftd-076-elvis-country",
+    "catalogNumber": "#076",
+    "title": "Elvis Country",
+    "releaseDate": "10/2008",
+    "releaseType": "studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elviscountry-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elviscountry.htm"
+  },
+  {
+    "id": "ftd-077-in-person-at-the-international-hotel-las-vegas",
+    "catalogNumber": "#077",
+    "title": "In Person At The International Hotel, Las Vegas",
+    "releaseDate": "12/2008",
+    "releaseType": "live recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/inperson-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/inperson.htm"
+  },
+  {
+    "id": "ftd-078-i-ll-remember-you",
+    "catalogNumber": "#078",
+    "title": "I'll Remember You",
+    "releaseDate": "12/2008",
+    "releaseType": "live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/illrememberyou-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/illrememberyou.htm"
+  },
+  {
+    "id": "ftd-079-blue-hawaii",
+    "catalogNumber": "#079",
+    "title": "Blue Hawaii",
+    "releaseDate": "02/2009",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/bluehawaii-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/bluehawaii.htm"
+  },
+  {
+    "id": "ftd-080-standing-room-only",
+    "catalogNumber": "#080",
+    "title": "Standing Room Only",
+    "releaseDate": "04/2009",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/standingroomonly-t.JPG",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/standingroomonly.html"
+  },
+  {
+    "id": "ftd-081-dixieland-delight",
+    "catalogNumber": "#081",
+    "title": "Dixieland Delight",
+    "releaseDate": "05/2009",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/dixieland-delight-t.JPG",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/dixieland-delight.html"
+  },
+  {
+    "id": "ftd-082-the-wonder-of-you",
+    "catalogNumber": "#082",
+    "title": "The Wonder Of You",
+    "releaseDate": "06/2009",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thewonderofyou-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thewonderofyou.htm"
+  },
+  {
+    "id": "ftd-083-jailhouse-rock",
+    "catalogNumber": "#083",
+    "title": "Jailhouse Rock",
+    "releaseDate": "09/2009",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/jailhouserock-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/jailhouserock.htm"
+  },
+  {
+    "id": "ftd-084-from-sunset-to-las-vegas",
+    "catalogNumber": "#084",
+    "title": "From Sunset To Las Vegas",
+    "releaseDate": "09/2009",
+    "releaseType": "Rehearsals and live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromsunsettolasvegas-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromsunsettolasvegas.htm"
+  },
+  {
+    "id": "ftd-085-new-haven-76",
+    "catalogNumber": "#085",
+    "title": "New Haven '76",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/newhaven76t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/newhaven76.htm"
+  },
+  {
+    "id": "ftd-086-rockin-across-texas",
+    "catalogNumber": "#086",
+    "title": "Rockin' Across Texas",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/rockinacrosstexascd-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/rockinacrosstexascd.htm"
+  },
+  {
+    "id": "ftd-087-good-times",
+    "catalogNumber": "#087",
+    "title": "Good Times",
+    "releaseDate": "Unknown",
+    "releaseType": "studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/goodtimes100.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/goodtimes.html"
+  },
+  {
+    "id": "ftd-088-a-minnesota-moment",
+    "catalogNumber": "#088",
+    "title": "A Minnesota Moment",
+    "releaseDate": "02/2010",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/minnesotamomen-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/minnesotamoment.htm"
+  },
+  {
+    "id": "ftd-089-elvis-now",
+    "catalogNumber": "#089",
+    "title": "Elvis Now",
+    "releaseDate": "03/2010",
+    "releaseType": "studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisnowt.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisnow.htm"
+  },
+  {
+    "id": "ftd-090-high-sierra",
+    "catalogNumber": "#090",
+    "title": "High Sierra",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/highsierrat.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/highsierra.htm"
+  },
+  {
+    "id": "ftd-091-showtime-birmingham-dallas-76",
+    "catalogNumber": "#091",
+    "title": "Showtime! Birmingham/Dallas '76",
+    "releaseDate": "05/2010",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/showtimet.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/showtime.htm"
+  },
+  {
+    "id": "ftd-092-how-great-thou-art",
+    "catalogNumber": "#092",
+    "title": "How Great Thou Art",
+    "releaseDate": "06/2010",
+    "releaseType": "studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/howgreatthouart-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/howgreatthourart.htm"
+  },
+  {
+    "id": "ftd-093-king-creole-the-music",
+    "catalogNumber": "#093",
+    "title": "King Creole - The Music",
+    "releaseDate": "08/2010",
+    "releaseType": "soundtracks",
+    "series": "Book",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kingcreole-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kingcreole.htm"
+  },
+  {
+    "id": "ftd-094-elvis-fool",
+    "catalogNumber": "#094",
+    "title": "Elvis (Fool)",
+    "releaseDate": "Unknown",
+    "releaseType": "studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fool-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fool.html"
+  },
+  {
+    "id": "ftd-095-elvis-as-recorded-at-boston-garden-71",
+    "catalogNumber": "#095",
+    "title": "Elvis As Recorded At Boston Garden '71",
+    "releaseDate": "10/2010",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/boston-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/boston.htm"
+  },
+  {
+    "id": "ftd-096-chicago-stadium",
+    "catalogNumber": "#096",
+    "title": "Chicago Stadium",
+    "releaseDate": "12/2010",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/chicagostadium-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/chicago.htm"
+  },
+  {
+    "id": "ftd-097-jailhouse-rock-volume-2",
+    "catalogNumber": "#097",
+    "title": "Jailhouse Rock Volume 2",
+    "releaseDate": "12/2010",
+    "releaseType": "soundtracks",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/jailhouserock2-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/jailhouserock2.htm"
+  },
+  {
+    "id": "ftd-098-live-in-vegas",
+    "catalogNumber": "#098",
+    "title": "Live In Vegas",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/liveinvegas-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/liveinvegas.htm"
+  },
+  {
+    "id": "ftd-099-guitar-man",
+    "catalogNumber": "#099",
+    "title": "Guitar Man",
+    "releaseDate": "Unknown",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/guitarman-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/guitarman.htm"
+  },
+  {
+    "id": "ftd-100-live-in-la",
+    "catalogNumber": "#100",
+    "title": "Live In LA",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/liveinlacd-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/liveinlacd.htm"
+  },
+  {
+    "id": "ftd-101-amarillo-77",
+    "catalogNumber": "#101",
+    "title": "Amarillo '77",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/amarillo-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/amarillo.htm"
+  },
+  {
+    "id": "ftd-102-stage-rehearsal",
+    "catalogNumber": "#102",
+    "title": "Stage Rehearsal",
+    "releaseDate": "Unknown",
+    "releaseType": "Rehearsals",
+    "series": "Live Recordings",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/stagerehearsal-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/stagerehearsal.htm"
+  },
+  {
+    "id": "ftd-103-fashion-for-a-king",
+    "catalogNumber": "#103",
+    "title": "Fashion For A King",
+    "releaseDate": "Unknown",
+    "releaseType": "Live Recordings",
+    "series": "Book",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fashionforaking-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fashionforaking.htm"
+  },
+  {
+    "id": "ftd-104-he-touched-me",
+    "catalogNumber": "#104",
+    "title": "He Touched Me",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio Recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hetouchedme-ftd-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hetouchedme.htm"
+  },
+  {
+    "id": "ftd-105-forty-eight-hours-to-memphis",
+    "catalogNumber": "#105",
+    "title": "Forty Eight Hours To Memphis",
+    "releaseDate": "Unknown",
+    "releaseType": "Live Recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/48hrstomemphis-ftd-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fortyeighthours.htm"
+  },
+  {
+    "id": "ftd-106-elvis-sings-the-wonderful-world-of-christmas",
+    "catalogNumber": "#106",
+    "title": "Elvis Sings The Wonderful World Of Christmas",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/singsthewonderfulworldofchristmas1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvissingstehwonderfullworld.html"
+  },
+  {
+    "id": "ftd-107-promised-land",
+    "catalogNumber": "#107",
+    "title": "Promised Land",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/promisedland1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/promisedland.html"
+  },
+  {
+    "id": "ftd-108-our-memories-of-elvis-volumes-1-2-3",
+    "catalogNumber": "#108",
+    "title": "Our Memories Of Elvis - Volumes 1, 2 & 3",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ourmemoriesofelvis1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ourmemoriesofelvis.htm"
+  },
+  {
+    "id": "ftd-109-on-stage-february-1970",
+    "catalogNumber": "#109",
+    "title": "On Stage - February , 1970",
+    "releaseDate": "Unknown",
+    "releaseType": "Live Recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/onstage1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/onstage.html"
+  },
+  {
+    "id": "ftd-110-another-saturday-night",
+    "catalogNumber": "#110",
+    "title": "Another Saturday Night",
+    "releaseDate": "Unknown",
+    "releaseType": "Live Recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/anothersaturdaynight1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/annothersaturdaynight.htm"
+  },
+  {
+    "id": "ftd-111-welcome-home-elvis-1960",
+    "catalogNumber": "#111",
+    "title": "Welcome Home Elvis 1960",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio Recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/welcomehome1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/welcomehomeelvis1960.htm"
+  },
+  {
+    "id": "ftd-112-elvis-from-hawaii-to-las-vegas",
+    "catalogNumber": "#112",
+    "title": "Elvis From Hawaii To Las Vegas",
+    "releaseDate": "Unknown",
+    "releaseType": "Rehearsals",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromhawaiitolasvegas1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromhawaiitolasvegas.htm"
+  },
+  {
+    "id": "ftd-113-g-i-blues",
+    "catalogNumber": "#113",
+    "title": "G.I Blues",
+    "releaseDate": "Unknown",
+    "releaseType": "soundtracks",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/giblues1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/giblues.htm"
+  },
+  {
+    "id": "ftd-114-a-boy-from-tupelo",
+    "catalogNumber": "#114",
+    "title": "A Boy From Tupelo",
+    "releaseDate": "Unknown",
+    "releaseType": "live and studio recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/aboyfromtupelo1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/aboyfromtupelo.htm"
+  },
+  {
+    "id": "ftd-115-from-memphis-to-hollywood",
+    "catalogNumber": "#115",
+    "title": "From Memphis To Hollywood",
+    "releaseDate": "Unknown",
+    "releaseType": "soundtracks",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/frommemphistohollywood1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/frommemphistohollywood.htm"
+  },
+  {
+    "id": "ftd-116-from-elvis-presley-boulevard-memphis-tennessee",
+    "catalogNumber": "#116",
+    "title": "From Elvis Presley Boulevard, Memphis, Tennessee",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromepblvd1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromepblvd.htm"
+  },
+  {
+    "id": "ftd-117-hits-of-the-70s",
+    "catalogNumber": "#117",
+    "title": "Hits Of The 70s",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hitsofthe70s1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hitsofthe70s.htm"
+  },
+  {
+    "id": "ftd-118-elvis-back-memphis",
+    "catalogNumber": "#118",
+    "title": "Elvis Back Memphis",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/backinmemphis1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisbackinmemphis.htm"
+  },
+  {
+    "id": "ftd-119-3000-south-paradise-road",
+    "catalogNumber": "#119",
+    "title": "3000 South Paradise Road",
+    "releaseDate": "Unknown",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/300soutparadiseroad1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/3000southparadiseroad.htm"
+  },
+  {
+    "id": "ftd-120-the-best-of-british-the-hmv-years-1956-1958",
+    "catalogNumber": "#120",
+    "title": "The Best Of British - The HMV Years 1956 - 1958",
+    "releaseDate": "Unknown",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebestofbritish1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebestofbritish.htm"
+  },
+  {
+    "id": "ftd-121-from-elvis-in-memphis",
+    "catalogNumber": "#121",
+    "title": "From Elvis In Memphis",
+    "releaseDate": "5/2013",
+    "releaseType": "Studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromelvisinmemphis_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromelvisinmemphis-ftd-13.html"
+  },
+  {
+    "id": "ftd-122-stay-away-joe",
+    "catalogNumber": "#122",
+    "title": "Stay Away, Joe",
+    "releaseDate": "5/2013",
+    "releaseType": "Studio recordings",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/stayawayjoe_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/stayawayjoe.html"
+  },
+  {
+    "id": "ftd-123-summer-of-61",
+    "catalogNumber": "#123",
+    "title": "Summer Of '61",
+    "releaseDate": "5/2013",
+    "releaseType": "Studio recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/summerof61-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/sumerof61.htm"
+  },
+  {
+    "id": "ftd-124-sold-out",
+    "catalogNumber": "#124",
+    "title": "Sold Out!",
+    "releaseDate": "Unknown",
+    "releaseType": "Live Recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/soldout1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/soldout.htm"
+  },
+  {
+    "id": "ftd-125-hot-august-night",
+    "catalogNumber": "#125",
+    "title": "Hot August Night",
+    "releaseDate": "Unknown",
+    "releaseType": "Live Recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hotaugustnight1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hotaugustnight.htm"
+  },
+  {
+    "id": "ftd-126-caf-europa-g-i-blues-vol-2",
+    "catalogNumber": "#126",
+    "title": "Caf\u00e9 Europa - G.I. Blues Vol. 2",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/giblues2-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/giblues2.htm"
+  },
+  {
+    "id": "ftd-127-the-on-stage-season",
+    "catalogNumber": "#127",
+    "title": "The On Stage Season",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theonstageseasons1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theonstageseason.htm"
+  },
+  {
+    "id": "ftd-128-moody-blue",
+    "catalogNumber": "#128",
+    "title": "Moody Blue",
+    "releaseDate": "Unknown",
+    "releaseType": "Live and Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/moodyblue1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/moodyblue.htm"
+  },
+  {
+    "id": "ftd-129-from-elvis-at-american-sound-studios",
+    "catalogNumber": "#129",
+    "title": "From Elvis At American Sound Studios",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/atamericansoundstudios1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/atamericansoundstudios.htm"
+  },
+  {
+    "id": "ftd-130-something-for-the-girls",
+    "catalogNumber": "#130",
+    "title": "Something For The Girls",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/somethingforthegirls1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/somethingforthegirls.htm"
+  },
+  {
+    "id": "ftd-131-destination-usa",
+    "catalogNumber": "#131",
+    "title": "Destination USA",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/destinationusa1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/destinationusa.htm"
+  },
+  {
+    "id": "ftd-132-elvis",
+    "catalogNumber": "#132",
+    "title": "Elvis",
+    "releaseDate": "Unknown",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvis1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvis.htm"
+  },
+  {
+    "id": "ftd-133-love-me-tender",
+    "catalogNumber": "#133",
+    "title": "Love Me Tender",
+    "releaseDate": "Unknown",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lovemetender1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lovemetender.htm"
+  },
+  {
+    "id": "ftd-134-memphis-to-nashville-61",
+    "catalogNumber": "#134",
+    "title": "Memphis To Nashville '61",
+    "releaseDate": "Unknown",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/memphistonahsville1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/memphistonashville.htm"
+  },
+  {
+    "id": "ftd-135-the-return-to-vegas",
+    "catalogNumber": "#135",
+    "title": "The Return To Vegas",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thereturntovegas1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thereturntovegas.htm"
+  },
+  {
+    "id": "ftd-136-the-best-of-british-the-rca-years-1957-1958",
+    "catalogNumber": "#136",
+    "title": "The Best Of British - The RCA Years 1957-1958",
+    "releaseDate": "Unknown",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/bestofbritish2-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebestofbritish2.htm"
+  },
+  {
+    "id": "ftd-137-elvis-for-everyone",
+    "catalogNumber": "#137",
+    "title": "Elvis For Everyone",
+    "releaseDate": "Unknown",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisforeveryone1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisforeveryone.htm"
+  },
+  {
+    "id": "ftd-138-in-florida",
+    "catalogNumber": "#138",
+    "title": "In Florida",
+    "releaseDate": "Unknown",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/infolrida1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/inflorida.htm"
+  },
+  {
+    "id": "ftd-139-elvis-christmas-album",
+    "catalogNumber": "#139",
+    "title": "Elvis' Christmas Album",
+    "releaseDate": "12/2014",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvischristmasalbum1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvischristmasalbum.htm"
+  },
+  {
+    "id": "ftd-140-flaming-star",
+    "catalogNumber": "#140",
+    "title": "Flaming Star",
+    "releaseDate": "12/2014",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/flamingstar1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/flamingstar.htm"
+  },
+  {
+    "id": "ftd-141-this-is-elvis",
+    "catalogNumber": "#141",
+    "title": "This Is Elvis",
+    "releaseDate": "03/2015",
+    "releaseType": "Various recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thisiselvis1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thisiselvis.htm"
+  },
+  {
+    "id": "ftd-142-rock-around-the-bloch",
+    "catalogNumber": "#142",
+    "title": "Rock Around The Bloch",
+    "releaseDate": "03/2015",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/rockaroundthebloch1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/rockaroundthebloch.htm"
+  },
+  {
+    "id": "ftd-143-king-creole",
+    "catalogNumber": "#143",
+    "title": "King Creole",
+    "releaseDate": "05/2015",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kincreoleclassic-2_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kingcreoleclassic.htm"
+  },
+  {
+    "id": "ftd-144-elvis-golden-records",
+    "catalogNumber": "#144",
+    "title": "Elvis' Golden Records",
+    "releaseDate": "07/2015",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/goldenrec1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/goldenrecords.htm"
+  },
+  {
+    "id": "ftd-145-change-of-habit",
+    "catalogNumber": "#145",
+    "title": "Change Of Habit",
+    "releaseDate": "07/2015",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/changeofhabit1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/chagenofhabit.htm"
+  },
+  {
+    "id": "ftd-146-the-best-of-british-the-rca-years-1959-1960",
+    "catalogNumber": "#146",
+    "title": "The Best Of British - The RCA Years 1959-1960",
+    "releaseDate": "09/2015",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebestofbritish5960-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebestofbritish3.htm"
+  },
+  {
+    "id": "ftd-147-live-a-little-love-a-little",
+    "catalogNumber": "#147",
+    "title": "Live A Little, Love A Little",
+    "releaseDate": "11/2015",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/livealittle2_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/livalittlelovealittle.htm"
+  },
+  {
+    "id": "ftd-148-elvis-in-west-texas",
+    "catalogNumber": "#148",
+    "title": "Elvis In West Texas",
+    "releaseDate": "11/2015",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisinwestrtexas1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisinwesttexas.htm"
+  },
+  {
+    "id": "ftd-149-elvis-golden-records-volume-3",
+    "catalogNumber": "#149",
+    "title": "Elvis' Golden Records Volume 3",
+    "releaseDate": "12/2015",
+    "releaseType": "Studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/goldenrec3-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/goldenrecords3.htm"
+  },
+  {
+    "id": "ftd-150-elvis-in-alabama",
+    "catalogNumber": "#150",
+    "title": "Elvis In Alabama",
+    "releaseDate": "12/2015",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisinalabama-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisinalabama.htm"
+  },
+  {
+    "id": "ftd-151-the-west-coast-tour-76",
+    "catalogNumber": "#151",
+    "title": "The West Coast Tour '76",
+    "releaseDate": "03/2016",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thewestcoasttour-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thewestcosttour.htm"
+  },
+  {
+    "id": "ftd-152-nbc-tv-special",
+    "catalogNumber": "#152",
+    "title": "NBC TV Special",
+    "releaseDate": "05/2016",
+    "releaseType": "Various recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/nbc1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/nbc.htm"
+  },
+  {
+    "id": "ftd-153-las-vegas-1975",
+    "catalogNumber": "#153",
+    "title": "Las Vegas 1975",
+    "releaseDate": "05/2016",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lasvegas1975-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lasvegas1975.htm"
+  },
+  {
+    "id": "ftd-154-speedway",
+    "catalogNumber": "#154",
+    "title": "Speedway",
+    "releaseDate": "06/2016",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/speedway1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/speedway.htm"
+  },
+  {
+    "id": "ftd-155-taking-care-of-business-in-a-flash",
+    "catalogNumber": "#155",
+    "title": "Taking Care Of Business - In a Flash",
+    "releaseDate": "06/2016",
+    "releaseType": "Various recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/takingcare1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/takingcare.htm"
+  },
+  {
+    "id": "ftd-156-hometown-shows",
+    "catalogNumber": "#156",
+    "title": "Hometown Shows",
+    "releaseDate": "09/2016",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hometownshows1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hometownshows.htm"
+  },
+  {
+    "id": "ftd-157-his-songs-of-praise-volume-one",
+    "catalogNumber": "#157",
+    "title": "His Songs Of Praise - Volume One",
+    "releaseDate": "09/2016",
+    "releaseType": "Various recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hissongsofpraise1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hissongsofpraise.htm"
+  },
+  {
+    "id": "ftd-158-elvis-golden-records-volume-4",
+    "catalogNumber": "#158",
+    "title": "Elvis' Golden Records Volume 4",
+    "releaseDate": "11/2016",
+    "releaseType": "Studio recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/goldenrecords4-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/goldenrecords4.htm"
+  },
+  {
+    "id": "ftd-159-spirit-of-jackson-ms",
+    "catalogNumber": "#159",
+    "title": "Spirit Of Jackson, MS",
+    "releaseDate": "12/2016",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/spiritofjackson1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/spiritofjackson.htm"
+  },
+  {
+    "id": "ftd-160-a-date-with-elvis",
+    "catalogNumber": "#160",
+    "title": "A Date With Elvis",
+    "releaseDate": "03/2017",
+    "releaseType": "Studio and home reordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/adatewithelvis1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/adatewithelvis.htm"
+  },
+  {
+    "id": "ftd-161-his-songs-of-praise-volume-two",
+    "catalogNumber": "#161",
+    "title": "His Songs Of Praise - Volume Two",
+    "releaseDate": "04/2017",
+    "releaseType": "Various recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hisosngsofpraise1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hissongsofpraise2.htm"
+  },
+  {
+    "id": "ftd-162-las-vegas-74",
+    "catalogNumber": "#162",
+    "title": "Las Vegas '74",
+    "releaseDate": "04/2017",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lasvegas74-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lasvegas74.htm"
+  },
+  {
+    "id": "ftd-163-elvis-in-atlanta",
+    "catalogNumber": "#163",
+    "title": "Elvis In Atlanta",
+    "releaseDate": "05/2017",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisinatlanta1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisinatlanta.htm"
+  },
+  {
+    "id": "ftd-164-roustabout",
+    "catalogNumber": "#164",
+    "title": "Roustabout",
+    "releaseDate": "07/2017",
+    "releaseType": "Studio recordings",
+    "series": "Movie Albums",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/roustabout1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/roustabout.htm"
+  },
+  {
+    "id": "ftd-165-elvis-at-madison-square-garden",
+    "catalogNumber": "#165",
+    "title": "Elvis At Madison Square Garden",
+    "releaseDate": "07/2017",
+    "releaseType": "Live recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/spreading1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/spreadingthenews.htm"
+  },
+  {
+    "id": "ftd-166-lake-tahoe-74",
+    "catalogNumber": "#166",
+    "title": "Lake Tahoe '74",
+    "releaseDate": "10/2017",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/laketahoe74-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/laketahoe74.htm"
+  },
+  {
+    "id": "ftd-167-the-last-movies",
+    "catalogNumber": "#167",
+    "title": "The Last Movies",
+    "releaseDate": "10/2017",
+    "releaseType": "Studio recordings",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisthelastmovies1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelastmovies.htm"
+  },
+  {
+    "id": "ftd-168-the-bicentennial-show",
+    "catalogNumber": "#168",
+    "title": "The Bicentennial Show",
+    "releaseDate": "12/2017",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebicentennialshow1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebicentennialshow.htm"
+  },
+  {
+    "id": "ftd-169-kissin-cousins",
+    "catalogNumber": "#169",
+    "title": "Kissin' Cousins",
+    "releaseDate": "12/2017",
+    "releaseType": "Studio recordings",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kissincousins1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kissincousins.htm"
+  },
+  {
+    "id": "ftd-170-murfreesboro-74",
+    "catalogNumber": "#170",
+    "title": "Murfreesboro '74",
+    "releaseDate": "03/2018",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/murfreesboro74-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/murfreesboro74.htm"
+  },
+  {
+    "id": "ftd-171-rebel-with-a-cause-56",
+    "catalogNumber": "#171",
+    "title": "Rebel With A Cause '56",
+    "releaseDate": "03/2018",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/rebelwithacoause1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/rebelwithacause.htm"
+  },
+  {
+    "id": "ftd-172-omaha-nebraska-74",
+    "catalogNumber": "#172",
+    "title": "Omaha, Nebraska '74",
+    "releaseDate": "05/2018",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/omahaneb74-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/omahanebraska74.htm"
+  },
+  {
+    "id": "ftd-173-off-on-stage",
+    "catalogNumber": "#173",
+    "title": "Off-On Stage",
+    "releaseDate": "06/2018",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/offonstage1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/offonstage.htm"
+  },
+  {
+    "id": "ftd-174-the-viva-las-vegas-sessions",
+    "catalogNumber": "#174",
+    "title": "The Viva Las Vegas Sessions",
+    "releaseDate": "08/2018",
+    "releaseType": "Studio recordings",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/vivasess1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/vivasessions.htm"
+  },
+  {
+    "id": "ftd-175-what-now-my-love",
+    "catalogNumber": "#175",
+    "title": "What Now My Love",
+    "releaseDate": "10/2018",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/whatnomylovet.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/whatnowmylove.htm"
+  },
+  {
+    "id": "ftd-176-holiday-season-in-vegas",
+    "catalogNumber": "#176",
+    "title": "Holiday Season In Vegas",
+    "releaseDate": "12/2018",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/holidayseasonst.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/holidayseasons.htm"
+  },
+  {
+    "id": "ftd-177-for-lp-fans-only",
+    "catalogNumber": "#177",
+    "title": "For LP Fans Only",
+    "releaseDate": "12/2018",
+    "releaseType": "Various recordings",
+    "series": "Classic CD Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/forlpfansonlyt.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/forlpfansonly.htm"
+  },
+  {
+    "id": "ftd-178-the-wild-one-56",
+    "catalogNumber": "#178",
+    "title": "The Wild One '56",
+    "releaseDate": "12/2018",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thewildonet.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thewildone.htm"
+  },
+  {
+    "id": "ftd-179-st-paul-to-wichita-october-74",
+    "catalogNumber": "#179",
+    "title": "St. Paul To Wichita October '74",
+    "releaseDate": "01/2019",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/stpaultowichitat.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/stpaultowichita.htm"
+  },
+  {
+    "id": "ftd-180-the-fun-in-acapulco-sessions",
+    "catalogNumber": "#180",
+    "title": "The Fun In Acapulco Sessions",
+    "releaseDate": "03/2019",
+    "releaseType": "Studio recordings",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/funinacapulcosess-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/funinacapulcosessions.htm"
+  },
+  {
+    "id": "ftd-181-through-the-lens-of-phillip-harrington",
+    "catalogNumber": "#181",
+    "title": "Through The Lens Of Phillip Harrington",
+    "releaseDate": "03/2019",
+    "releaseType": "Collector Release",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/throughthelens-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/throughthelens.htm"
+  },
+  {
+    "id": "ftd-182-from-georgia-to-florida",
+    "catalogNumber": "#182",
+    "title": "From Georgia To Florida",
+    "releaseDate": "05/2019",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromgeorgiatoflorida-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromgeorgiatoflorida.htm"
+  },
+  {
+    "id": "ftd-183-american-sound-1969",
+    "catalogNumber": "#183",
+    "title": "American Sound 1969",
+    "releaseDate": "10/2019",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/americansound69t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/americansound69.htm"
+  },
+  {
+    "id": "ftd-184-the-elvis-is-back-sessions",
+    "catalogNumber": "#184",
+    "title": "The Elvis Is Back! Sessions",
+    "releaseDate": "11/2019",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theelvisisbacksessionst.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theelvisisbacksessions.htm"
+  },
+  {
+    "id": "ftd-185-the-making-of-viva-las-vegas",
+    "catalogNumber": "#185",
+    "title": "The Making of Viva Las Vegas",
+    "releaseDate": "11/2019",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofvlv-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofvlv.htm"
+  },
+  {
+    "id": "ftd-186-elvis-in-california",
+    "catalogNumber": "#186",
+    "title": "Elvis In California",
+    "releaseDate": "02/2020",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisincaliforniat.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisincalifornia.htm"
+  },
+  {
+    "id": "ftd-187-the-kid-galahad-sessions",
+    "catalogNumber": "#187",
+    "title": "The Kid Galahad Sessions",
+    "releaseDate": "05/2020",
+    "releaseType": "Studio recordings",
+    "series": "Movie Album",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thekidgalahadsessionst.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/kidgalahadsessions.htm"
+  },
+  {
+    "id": "ftd-188-st-louis-spokane",
+    "catalogNumber": "#188",
+    "title": "St. Louis / Spokane",
+    "releaseDate": "05/2020",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/stlousispokanet.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/stlouisspokane.htm"
+  },
+  {
+    "id": "ftd-189-that-s-the-way-it-is-50th-anniversary-collector-s-edition",
+    "catalogNumber": "#189",
+    "title": "That's The Way It Is - 50th Anniversary Collector's Edition",
+    "releaseDate": "08/2020",
+    "releaseType": "Rehearsals",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ttwii50th.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/ttwii50th.htm"
+  },
+  {
+    "id": "ftd-190-the-something-for-everybody-sessions-featuring-the-wild-in-the-country-sessions",
+    "catalogNumber": "#190",
+    "title": "The Something For Everybody Sessions featuring the Wild In The Country Sessions",
+    "releaseDate": "11/2020",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thesomethingforevrybodysessions-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thesomethingforeverybodysessions.htm"
+  },
+  {
+    "id": "ftd-191-bruce-jackson-on-the-road-with-elvis",
+    "catalogNumber": "#191",
+    "title": "Bruce Jackson On The Road With Elvis",
+    "releaseDate": "01/2021",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/brucejackson-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/brucejackson.htm"
+  },
+  {
+    "id": "ftd-192-the-his-hand-in-mine-sessions",
+    "catalogNumber": "#192",
+    "title": "The His Hand In Mine Sessions",
+    "releaseDate": "03/2021",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thehishandinminesess-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thehishandinminesessions.htm"
+  },
+  {
+    "id": "ftd-193-elvis-las-vegas-hilton-1973",
+    "catalogNumber": "#193",
+    "title": "Elvis Las Vegas Hilton 1973",
+    "releaseDate": "06/2021",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/hilton73-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lasvegashilton1973.htm"
+  },
+  {
+    "id": "ftd-194-love-me-tender-through-the-lens-of-robert-vose",
+    "catalogNumber": "#194",
+    "title": "Love Me Tender - Through The Lens Of Robert Vose",
+    "releaseDate": "06/2021",
+    "releaseType": "Studio recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lovemetenderbook-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lovemetenderbook.htm"
+  },
+  {
+    "id": "ftd-195-fort-worth-texas-1974",
+    "catalogNumber": "#195",
+    "title": "Fort Worth, Texas 1974",
+    "releaseDate": "08/2021",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fortworth-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fortworth1974.htm"
+  },
+  {
+    "id": "ftd-196-south-bound-tampa-atlanta-75",
+    "catalogNumber": "#196",
+    "title": "South Bound - Tampa/Atlanta '75",
+    "releaseDate": "11/2021",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/southboundt.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/southbond.htm"
+  },
+  {
+    "id": "ftd-197-the-pot-luck-sessions",
+    "catalogNumber": "#197",
+    "title": "The Pot Luck Sessions",
+    "releaseDate": "11/2021",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thepotlucksessionst.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thepotlucksessions.htm"
+  },
+  {
+    "id": "ftd-198-the-making-of-jailhouse-rock",
+    "catalogNumber": "#198",
+    "title": "The Making Of Jailhouse Rock",
+    "releaseDate": "12/2021",
+    "releaseType": "Studio recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofjailhouserockt.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofjaihouserock.htm"
+  },
+  {
+    "id": "ftd-199-aloha-from-hawaii-via-satellite",
+    "catalogNumber": "#199",
+    "title": "Aloha From Hawaii Via Satellite",
+    "releaseDate": "02/2022",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/aloha-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/alohafromhawaii.htm"
+  },
+  {
+    "id": "ftd-200-pine-bluff-to-madison-76",
+    "catalogNumber": "#200",
+    "title": "Pine Bluff To Madison '76",
+    "releaseDate": "05/2022",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/pinebluff-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/pinebluff.htm"
+  },
+  {
+    "id": "ftd-201-celluloid-sell-out-worldwide-elvis-presley-movie-memorabilia-1956-1958",
+    "catalogNumber": "#201",
+    "title": "Celluloid Sell-Out! - Worldwide Elvis Presley Movie Memorabilia 1956 - 1958",
+    "releaseDate": "05/2022",
+    "releaseType": "Studio recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/celluloidsellout-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/celluloidsellout.htm"
+  },
+  {
+    "id": "ftd-202-from-vegas-to-tahoe",
+    "catalogNumber": "#202",
+    "title": "From Vegas To Tahoe",
+    "releaseDate": "07/2022",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromvegastotahoe-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromvegastotahoe.htm"
+  },
+  {
+    "id": "ftd-203-devil-in-disguise-the-lost-album-sessions",
+    "catalogNumber": "#203",
+    "title": "Devil In Disguise - The \"Lost Album\" Sessions",
+    "releaseDate": "07/2022",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/devilindisquise-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/devilindisquise.htm"
+  },
+  {
+    "id": "ftd-204-las-vegas-71",
+    "catalogNumber": "#204",
+    "title": "Las Vegas '71",
+    "releaseDate": "11/2022",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lasvegas71-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/lasvegsas71.htm"
+  },
+  {
+    "id": "ftd-205-from-louisiana-and-memphis",
+    "catalogNumber": "#205",
+    "title": "From Louisiana And Memphis",
+    "releaseDate": "12/2022",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromlouisiana-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/fromlousiana.htm"
+  },
+  {
+    "id": "ftd-206-let-me-be-there",
+    "catalogNumber": "#206",
+    "title": "Let Me Be There",
+    "releaseDate": "03/2023",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/letmebethere-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/letmebethere.htm"
+  },
+  {
+    "id": "ftd-207-elvis-as-recorded-at-madison-square-garden",
+    "catalogNumber": "#207",
+    "title": "Elvis As Recorded At Madison Square Garden",
+    "releaseDate": "05/2023",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/asrecordedatmsq-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisasrecordedasmsg.htm"
+  },
+  {
+    "id": "ftd-208-the-making-of-blue-hawaii",
+    "catalogNumber": "#208",
+    "title": "The Making of Blue Hawaii",
+    "releaseDate": "05/2023",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofbluehawaii-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofbluehawaii.htm"
+  },
+  {
+    "id": "ftd-209-houston-fort-worth-baton-rouge-1974",
+    "catalogNumber": "#209",
+    "title": "Houston - Fort Worth - Baton Rouge 1974",
+    "releaseDate": "06/2023",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/houstonfortworth-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/houstonfortworth.htm"
+  },
+  {
+    "id": "ftd-210-august-season-in-vegas-hilton-hotel-1974",
+    "catalogNumber": "#210",
+    "title": "August Season In Vegas - Hilton Hotel,1974",
+    "releaseDate": "08/2023",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/augustseasoninvegas-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/augustseasoninvegas.htm"
+  },
+  {
+    "id": "ftd-211-the-how-great-thou-art-sessions",
+    "catalogNumber": "#211",
+    "title": "The How Great Thou Art Sessions",
+    "releaseDate": "08/2023",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thehowgreatthouartsess-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thehowgreatthouartsessions.htm"
+  },
+  {
+    "id": "ftd-212-summer-of-76",
+    "catalogNumber": "#212",
+    "title": "Summer Of '76",
+    "releaseDate": "12/2023",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/summerof76-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/summerof76.htm"
+  },
+  {
+    "id": "ftd-213-elvis-now-in-person-1972",
+    "catalogNumber": "#213",
+    "title": "Elvis Now In Person * 1972",
+    "releaseDate": "12/2023",
+    "releaseType": "Live Recordings & Rehearsals",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/elvisnowinperson1972-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/wlvisnowinperson1972.htm"
+  },
+  {
+    "id": "ftd-214-stateline-sahara-1974",
+    "catalogNumber": "#214",
+    "title": "Stateline Sahara 1974",
+    "releaseDate": "04/2024",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/statelinesahara-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/statelinesahara.htm"
+  },
+  {
+    "id": "ftd-215-the-blue-hawaii-sessions",
+    "catalogNumber": "#215",
+    "title": "The Blue Hawaii Sessions",
+    "releaseDate": "04/2024",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebluehawaiisessions-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thebluehawaiisessions.htm"
+  },
+  {
+    "id": "ftd-216-guitar-man-the-67-68-sessions",
+    "catalogNumber": "#216",
+    "title": "Guitar Man - The '67/'68 Sessions",
+    "releaseDate": "08/2024",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/guitarmansessions1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/guitarmansessions.htm"
+  },
+  {
+    "id": "ftd-217-celluloid-sell-out-worldwide-elvis-presley-movie-memorabilia-1960-1961",
+    "catalogNumber": "#217",
+    "title": "Celluloid Sell-Out! - Worldwide Elvis Presley Movie Memorabilia 1960 - 1961",
+    "releaseDate": "08/2024",
+    "releaseType": "Studio recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/celluloidsellout2-1_small.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/celluloidsellout2.htm"
+  },
+  {
+    "id": "ftd-218-the-last-tours-vol-1",
+    "catalogNumber": "#218",
+    "title": "The Last Tours, Vol. 1",
+    "releaseDate": "10/2024",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelasttorusvol1-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelasttoursvol1.htm"
+  },
+  {
+    "id": "ftd-219-the-girl-happy-sessions",
+    "catalogNumber": "#219",
+    "title": "The Girl Happy Sessions",
+    "releaseDate": "12/2024",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thegirlhappysessions-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thegirlhappysessions.htm"
+  },
+  {
+    "id": "ftd-220-the-making-of-king-creole",
+    "catalogNumber": "#220",
+    "title": "The Making Of King Creole",
+    "releaseDate": "12/2024",
+    "releaseType": "Studio recordings",
+    "series": "Follow That Dream",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofkingcreole-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofkingcreole.htm"
+  },
+  {
+    "id": "ftd-221-the-last-tours-vol-2",
+    "catalogNumber": "#221",
+    "title": "The Last Tours, Vol. 2",
+    "releaseDate": "12/2024",
+    "releaseType": "Live recordings",
+    "series": "Live",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelasttours2-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelasttoursvol2.htm"
+  },
+  {
+    "id": "ftd-222-june-75",
+    "catalogNumber": "#222",
+    "title": "June '75",
+    "releaseDate": "03/2025",
+    "releaseType": "Live recordings",
+    "series": "Live",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/june75-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/june75.htm"
+  },
+  {
+    "id": "ftd-223-the-harum-scarum-sessions",
+    "catalogNumber": "#223",
+    "title": "The Harum Scarum Sessions",
+    "releaseDate": "06/2025",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theharumscarumsessions-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theharumscarumsessions.htm"
+  },
+  {
+    "id": "ftd-224-the-last-tours-vol-3",
+    "catalogNumber": "#224",
+    "title": "The Last Tours, Vol. 3",
+    "releaseDate": "09/2025",
+    "releaseType": "Live recordings",
+    "series": "Live",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelasttourvol3-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelasttoursvol3.htm"
+  },
+  {
+    "id": "ftd-225-the-making-of-g-i-blues",
+    "catalogNumber": "#225",
+    "title": "The Making Of G.I. Blues",
+    "releaseDate": "12/2025",
+    "releaseType": "Studio recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofgiblues-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/themakingofgiblues.htm"
+  },
+  {
+    "id": "ftd-226-the-last-concert",
+    "catalogNumber": "#226",
+    "title": "The Last Concert",
+    "releaseDate": "04/2026",
+    "releaseType": "Live recordings",
+    "series": "Live",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelastconcert-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thelastconcert.htm"
+  },
+  {
+    "id": "ftd-227-the-paradise-hawaiian-style-sessions",
+    "catalogNumber": "#227",
+    "title": "The Paradise Hawaiian Style Sessions",
+    "releaseDate": "06/2026",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/paradisesessions-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/theparadisehawaiisessions.htm"
+  },
+  {
+    "id": "ftd-228-summer-nights",
+    "catalogNumber": "#228",
+    "title": "Summer Nights",
+    "releaseDate": "08/2026",
+    "releaseType": "Live recordings",
+    "series": "Live",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/summernichtsjune74-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/summernightsjune74.htm"
+  },
+  {
+    "id": "ftd-229-soldier-boy",
+    "catalogNumber": "#229",
+    "title": "Soldier Boy",
+    "releaseDate": "08/2026",
+    "releaseType": "Studio recordings & home recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/soldierboy-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/soldierboy.htm"
+  },
+  {
+    "id": "ftd-230-memphis-in-march",
+    "catalogNumber": "#230",
+    "title": "Memphis In March",
+    "releaseDate": "10/2026",
+    "releaseType": "Live recordings",
+    "series": "Live Recordings & Rehearsals",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/memphisinmarch-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/memphisinmarch.htm"
+  },
+  {
+    "id": "ftd-231-celluloid-sell-out-worldwide-elvis-presley-movie-memorabilia-1968-1969",
+    "catalogNumber": "#231",
+    "title": "Celluloid Sell-Out! - Worldwide Elvis Presley Movie Memorabilia 1968 - 1969",
+    "releaseDate": "10/2026",
+    "releaseType": "Studio recordings",
+    "series": "Books",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/celluloidsellout3-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/celluloidsellout3.htm"
+  },
+  {
+    "id": "ftd-232-the-frankie-and-johnny-sessions",
+    "catalogNumber": "#232",
+    "title": "The Frankie And Johnny Sessions",
+    "releaseDate": "10/2026",
+    "releaseType": "Studio recordings",
+    "series": "Studio Recordings & Outtakes",
+    "coverImageURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thefrankieandjohnnysessions-t.jpg",
+    "detailURL": "https://www.elvisoncd.com/EIGENECD_a-z/ftd-label/thefrankieandjohnnysessions.htm"
+  }
+]

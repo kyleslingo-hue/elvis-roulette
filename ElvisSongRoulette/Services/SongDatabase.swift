@@ -98,28 +98,46 @@ final class SongDatabase {
             return moodFiltered
         }
 
-        // First infer any moods from the typed query text
+        // Infer any moods from the typed query text
         let inferredMoods = Mood.allCases.filter { candidate in
             candidate.displayName.lowercased().contains(trimmedQuery) ||
             candidate.searchSynonyms.contains(where: { trimmedQuery.contains($0) || $0.contains(trimmedQuery) })
         }
 
-        let textMatches = artistFiltered.filter { song in
-            let matchesKeyword = song.keywords.contains { $0.lowercased().contains(trimmedQuery) }
-            let matchesMeta = song.title.lowercased().contains(trimmedQuery)
-                || song.era.lowercased().contains(trimmedQuery)
-                || song.album.lowercased().contains(trimmedQuery)
-                || song.session.location.lowercased().contains(trimmedQuery)
-            let matchesInferredMood = !inferredMoods.isEmpty && song.moods.contains(where: { inferredMoods.contains($0) })
-            return matchesKeyword || matchesMeta || matchesInferredMood
+        let stopWords: Set<String> = [
+            "i", "im", "i'm", "feel", "feeling", "mood", "songs", "song",
+            "music", "play", "some", "a", "an", "the", "for", "want", "to",
+            "hear", "like", "very", "really", "in", "on", "with"
+        ]
+        let tokens = trimmedQuery
+            .components(separatedBy: CharacterSet.alphanumerics.inverted)
+            .filter { $0.count >= 2 && !stopWords.contains($0) }
+        let searchTerms = tokens.isEmpty ? [trimmedQuery] : Array(Set(tokens + [trimmedQuery]))
+
+        let directMatches = artistFiltered.filter { song in
+            searchTerms.contains { term in
+                song.keywords.contains(where: { $0.lowercased().contains(term) })
+                    || song.title.lowercased().contains(term)
+                    || song.era.lowercased().contains(term)
+                    || song.album.lowercased().contains(term)
+                    || song.session.location.lowercased().contains(term)
+            }
+        }
+
+        if !directMatches.isEmpty {
+            return directMatches
+        }
+
+        let moodMatches = artistFiltered.filter { song in
+            !inferredMoods.isEmpty && song.moods.contains(where: { inferredMoods.contains($0) })
         }
 
         if let mood {
-            let intersection = textMatches.filter { $0.moods.contains(mood) }
-            return intersection.isEmpty ? textMatches : intersection
+            let intersection = moodMatches.filter { $0.moods.contains(mood) }
+            return intersection.isEmpty ? moodMatches : intersection
         }
 
-        return textMatches
+        return moodMatches
     }
 
     /// Picks a random matching track, avoiding immediate repeats when alternatives exist.

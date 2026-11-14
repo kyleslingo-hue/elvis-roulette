@@ -62,4 +62,10 @@ struct SongDatabaseTests {
         #expect(ftd.releases.first?.catalogNumber == "#001")
         #expect(ftd.releases.first?.title == "Burbank 68")
     }
+
+    @Test func holidayQueryMatchesChristmasSongs() {
+        let matches = database.matchingSongs(mood: .melancholy, query: "im feeling christmas")
+        #expect(!matches.isEmpty)
+        #expect(matches.contains(where: { $0.title.localizedCaseInsensitiveContains("Christmas") || $0.title.localizedCaseInsensitiveContains("Santa") }))
+    }
 }

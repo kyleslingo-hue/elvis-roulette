@@ -808,14 +808,18 @@
       "melancholy"
     ],
     "keywords": [
+      "calm",
+      "christmas",
+      "comfort",
+      "gentle",
+      "gospel",
+      "holiday",
+      "hope",
       "peace",
       "quiet",
-      "gospel",
-      "comfort",
-      "calm",
       "valley",
-      "gentle",
-      "hope"
+      "winter",
+      "xmas"
     ],
     "energy": 2,
     "appleMusicQuery": "Peace in the Valley Elvis Presley",
@@ -2407,13 +2411,17 @@
     ],
     "keywords": [
       "1957",
+      "christmas",
       "dorsey",
       "gospelPeace",
       "hand",
+      "holiday",
       "lord",
       "precious",
       "take",
-      "thomas"
+      "thomas",
+      "winter",
+      "xmas"
     ],
     "energy": 3,
     "appleMusicQuery": "Take My Hand, Precious Lord Elvis Presley",
@@ -2464,10 +2472,14 @@
     "keywords": [
       "1957",
       "can",
+      "christmas",
       "god",
       "gospelPeace",
+      "holiday",
       "secret",
-      "what"
+      "what",
+      "winter",
+      "xmas"
     ],
     "energy": 3,
     "appleMusicQuery": "It Is No Secret (What God Can Do) Elvis Presley",
@@ -2981,12 +2993,16 @@
     ],
     "keywords": [
       "1957",
+      "christmas",
       "claus",
       "comes",
       "here",
       "highEnergy",
+      "holiday",
       "restless",
-      "santa"
+      "santa",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "Here Comes Santa Claus (Right Down Santa Claus Lane) Elvis Presley",
@@ -3039,10 +3055,14 @@
     "keywords": [
       "1957",
       "bethlehem",
+      "christmas",
       "highEnergy",
+      "holiday",
       "little",
       "restless",
-      "town"
+      "town",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "O Little Town of Bethlehem Elvis Presley",
@@ -3097,8 +3117,11 @@
       "christmas",
       "for",
       "highEnergy",
+      "holiday",
       "home",
-      "restless"
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "I'll Be Home for Christmas Elvis Presley",
@@ -30119,7 +30142,10 @@
       "blue",
       "christmas",
       "heartbroken",
-      "melancholy"
+      "holiday",
+      "melancholy",
+      "winter",
+      "xmas"
     ],
     "energy": 3,
     "appleMusicQuery": "Blue Christmas Elvis Presley",
@@ -30173,8 +30199,11 @@
       "1957",
       "christmas",
       "highEnergy",
+      "holiday",
       "restless",
-      "white"
+      "white",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "White Christmas Elvis Presley",
@@ -30225,9 +30254,13 @@
     ],
     "keywords": [
       "1957",
+      "christmas",
+      "holiday",
       "night",
       "silent",
-      "sultry"
+      "sultry",
+      "winter",
+      "xmas"
     ],
     "energy": 4,
     "appleMusicQuery": "Silent Night Elvis Presley",
@@ -35085,10 +35118,14 @@
     ],
     "keywords": [
       "1963",
+      "christmas",
+      "holiday",
       "inLove",
       "lucia",
       "melancholy",
-      "santa"
+      "santa",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Santa Lucia Elvis Presley",
@@ -38164,10 +38201,13 @@
       "christmas",
       "day",
       "every",
+      "holiday",
       "inLove",
       "like",
       "melancholy",
-      "was"
+      "was",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "If Every Day Was Like Christmas Elvis Presley",
@@ -42625,9 +42665,13 @@
     ],
     "keywords": [
       "1970",
+      "christmas",
+      "holiday",
       "inLove",
       "melancholy",
-      "snowbird"
+      "snowbird",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Snowbird Elvis Presley",
@@ -43211,11 +43255,14 @@
     "keywords": [
       "1971",
       "christmas",
+      "holiday",
       "inLove",
       "like",
       "melancholy",
       "seem",
-      "won"
+      "winter",
+      "won",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "It Won\u2019t Seem Like Christmas Elvis Presley",
@@ -43286,9 +43333,12 @@
       "christmas",
       "day",
       "get",
+      "holiday",
       "home",
       "inLove",
-      "melancholy"
+      "melancholy",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "If I Get Home On Christmas Day Elvis Presley",
@@ -43430,11 +43480,14 @@
       "1971",
       "and",
       "christmas",
+      "holiday",
       "holly",
       "inLove",
       "leaves",
       "melancholy",
-      "trees"
+      "trees",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Holly Leaves And Christmas Trees Elvis Presley",
@@ -45205,12 +45258,15 @@
       "1971",
       "christmas",
       "day",
+      "holiday",
       "home",
       "inLove",
       "jarrett",
       "melancholy",
       "michael",
-      "remake"
+      "remake",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "I\u2019ll Be Home On Christmas Day (remake) Michael Jarrett Elvis Presley",
@@ -47168,10 +47224,14 @@
     ],
     "keywords": [
       "1957",
+      "christmas",
       "gospelPeace",
+      "holiday",
       "peace",
       "the",
-      "valley"
+      "valley",
+      "winter",
+      "xmas"
     ],
     "energy": 3,
     "appleMusicQuery": "Peace In The Valley Elvis Presley",
@@ -47544,11 +47604,15 @@
     "keywords": [
       "1957",
       "back",
+      "christmas",
       "claus",
       "highEnergy",
+      "holiday",
       "restless",
       "santa",
-      "town"
+      "town",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "Santa Claus Is Back In Town Elvis Presley",
@@ -47585,8 +47649,11 @@
       "1957",
       "christmas",
       "highEnergy",
+      "holiday",
       "restless",
-      "while"
+      "while",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "While Christmas Elvis Presley",
@@ -47622,9 +47689,13 @@
     "keywords": [
       "1957",
       "bring",
+      "christmas",
       "highEnergy",
+      "holiday",
       "restless",
-      "santa"
+      "santa",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "Santa Bring My Elvis Presley",
@@ -47700,9 +47771,13 @@
       "baby",
       "back",
       "bring",
+      "christmas",
       "highEnergy",
+      "holiday",
       "restless",
-      "santa"
+      "santa",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "Santa Bring My Baby Back Elvis Presley",
@@ -51941,10 +52016,13 @@
     ],
     "keywords": [
       "1965",
+      "christmas",
       "harem",
       "holiday",
       "inLove",
-      "melancholy"
+      "melancholy",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Harem Holiday Elvis Presley",
@@ -54798,8 +54876,11 @@
     "keywords": [
       "1968",
       "christmas",
+      "holiday",
       "melancholy",
-      "restless"
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Christmas Elvis Presley",
@@ -56612,10 +56693,14 @@
     "keywords": [
       "1970",
       "bethlehem",
+      "christmas",
+      "holiday",
       "little",
       "melancholy",
       "restless",
-      "town"
+      "town",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Little Town Of Bethlehem Elvis Presley",
@@ -58059,10 +58144,14 @@
     "keywords": [
       "1971",
       "all",
+      "christmas",
       "come",
       "faithfull",
+      "holiday",
       "melancholy",
-      "restless"
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "O Come All Ye Faithfull Elvis Presley",
@@ -58097,11 +58186,15 @@
     ],
     "keywords": [
       "1971",
+      "christmas",
       "first",
+      "holiday",
       "melancholy",
       "noel",
       "restless",
-      "the"
+      "the",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "The First Noel Elvis Presley",
@@ -58136,9 +58229,12 @@
     "keywords": [
       "1971",
       "christmas",
+      "holiday",
       "night",
       "snowy",
-      "sultry"
+      "sultry",
+      "winter",
+      "xmas"
     ],
     "energy": 4,
     "appleMusicQuery": "On A Snowy Christmas Night Elvis Presley",
@@ -58172,9 +58268,12 @@
     ],
     "keywords": [
       "1971",
+      "christmas",
+      "holiday",
       "inLove",
       "winter",
-      "wonderland"
+      "wonderland",
+      "xmas"
     ],
     "energy": 4,
     "appleMusicQuery": "Winter Wonderland Elvis Presley",
@@ -58209,10 +58308,13 @@
     "keywords": [
       "1971",
       "christmas",
+      "holiday",
       "inLove",
       "the",
+      "winter",
       "wonderful",
-      "world"
+      "world",
+      "xmas"
     ],
     "energy": 4,
     "appleMusicQuery": "The Wonderful World Of Christmas Elvis Presley",
@@ -58248,11 +58350,14 @@
     "keywords": [
       "1971",
       "christmas",
+      "holiday",
       "like",
       "melancholy",
       "restless",
       "seem",
-      "won"
+      "winter",
+      "won",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Won\u2019t Seem Like Christmas Elvis Presley",
@@ -58289,9 +58394,12 @@
       "1971",
       "christmas",
       "day",
+      "holiday",
       "home",
       "melancholy",
-      "restless"
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "I\u2019ll Be Home On Christmas Day Elvis Presley",
@@ -58328,10 +58436,13 @@
       "1971",
       "and",
       "christmas",
+      "holiday",
       "holly",
       "leaves",
       "melancholy",
-      "restless"
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Holly Leaves And Christmas Elvis Presley",
@@ -58405,9 +58516,12 @@
       "1971",
       "baby",
       "christmas",
+      "holiday",
       "melancholy",
       "merry",
-      "restless"
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Merry Christmas Baby Elvis Presley",
@@ -58443,9 +58557,13 @@
     "keywords": [
       "1971",
       "bells",
+      "christmas",
+      "holiday",
       "melancholy",
       "restless",
-      "silver"
+      "silver",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Silver Bells Elvis Presley",
@@ -59089,9 +59207,13 @@
     ],
     "keywords": [
       "1972",
+      "christmas",
+      "holiday",
       "melancholy",
       "restless",
-      "santa"
+      "santa",
+      "winter",
+      "xmas"
     ],
     "energy": 5,
     "appleMusicQuery": "Santa Elvis Presley",
@@ -60238,11 +60360,15 @@
     ],
     "keywords": [
       "1974",
+      "christmas",
       "for",
       "gospelPeace",
+      "holiday",
       "peace",
       "the",
-      "valley"
+      "valley",
+      "winter",
+      "xmas"
     ],
     "energy": 3,
     "appleMusicQuery": "Peace In The Valley (For Elvis Presley",
@@ -64073,7 +64199,10 @@
       "blue",
       "christmas",
       "heartbroken",
-      "melancholy"
+      "holiday",
+      "melancholy",
+      "winter",
+      "xmas"
     ],
     "energy": 3,
     "appleMusicQuery": "Blue Christmas (6 Elvis Presley",
@@ -65696,8 +65825,11 @@
       "1957",
       "christmas",
       "highEnergy",
+      "holiday",
       "memories",
-      "restless"
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "MEMORIES OF CHRISTMAS Elvis Presley",
@@ -65733,10 +65865,14 @@
     "keywords": [
       "1957",
       "all",
+      "christmas",
       "come",
       "faithful",
       "highEnergy",
-      "restless"
+      "holiday",
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "O Come All Ye Faithful Elvis Presley",
@@ -65774,8 +65910,11 @@
       "christmas",
       "day",
       "highEnergy",
+      "holiday",
       "home",
-      "restless"
+      "restless",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "I\u2019ll Be Home On Christmas Day (6 Elvis Presley",
@@ -65811,10 +65950,14 @@
     "keywords": [
       "1957",
       "back",
+      "christmas",
       "claus",
       "highEnergy",
+      "holiday",
       "restless",
-      "santa"
+      "santa",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "Santa Claus Is Back In Elvis Presley",
@@ -65890,9 +66033,12 @@
       "day",
       "every",
       "highEnergy",
+      "holiday",
       "like",
       "restless",
-      "was"
+      "was",
+      "winter",
+      "xmas"
     ],
     "energy": 8,
     "appleMusicQuery": "II Every Day Was Like Christmas Elvis Presley",

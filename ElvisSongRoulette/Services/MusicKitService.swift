@@ -63,6 +63,7 @@ final class MusicKitService {
         isLookingUp = true
         defer { isLookingUp = false }
 
+        authorizationStatus = MusicAuthorization.currentStatus
         if authorizationStatus == .authorized {
             do {
                 var request = MusicCatalogSearchRequest(
@@ -116,16 +117,19 @@ final class MusicKitService {
 
     @discardableResult
     func play(record: SongRecord) async -> Bool {
-        if resolvedSong == nil && previewURL == nil {
+        authorizationStatus = MusicAuthorization.currentStatus
+        if (resolvedSong == nil && authorizationStatus == .authorized) || (resolvedSong == nil && previewURL == nil) {
             await lookupCatalogSong(for: record)
         }
 
         #if !targetEnvironment(simulator)
         // Try full Apple Music playback on physical devices when authorized & subscribed
-        if let song = resolvedSong,
+        if authorizationStatus == .authorized,
+           let song = resolvedSong,
            let subscription = try? await MusicSubscription.current,
            subscription.canPlayCatalogContent {
             do {
+                previewProgress = 0
                 ApplicationMusicPlayer.shared.queue = [song]
                 try await ApplicationMusicPlayer.shared.play()
                 isUsingApplicationMusicPlayer = true
@@ -134,7 +138,7 @@ final class MusicKitService {
                 startApplicationPlayerMonitor()
                 return true
             } catch {
-                // Fall back to AVPlayer stream below
+                statusBanner = "Apple Music playback error: \(error.localizedDescription)"
             }
         }
         #endif
@@ -153,14 +157,17 @@ final class MusicKitService {
         appPlayerMonitorTask = Task { @MainActor [weak self] in
             var sawPlaying = false
             while !Task.isCancelled {
-                try? await Task.sleep(for: .milliseconds(500))
+                try? await Task.sleep(for: .milliseconds(250))
                 guard !Task.isCancelled, let self, self.isUsingApplicationMusicPlayer else { break }
                 let status = ApplicationMusicPlayer.shared.state.playbackStatus
                 if status == .playing {
                     sawPlaying = true
-                    if let duration = self.resolvedMetadata?.duration, duration > 0 {
+                    if let duration = self.resolvedMetadata?.duration, duration > 1 {
                         let current = ApplicationMusicPlayer.shared.playbackTime
-                        self.previewProgress = min(max(current / duration, 0), 1)
+                        if current.isFinite && current >= 0 && current <= duration {
+                            let nextProgress = min(max(current / duration, 0), 1)
+                            self.previewProgress = max(self.previewProgress, nextProgress)
+                        }
                     }
                 } else if sawPlaying && status == .stopped {
                     self.stopPreview()
@@ -371,8 +378,9 @@ final class MusicKitService {
                 guard let self, let player = self.player else { return }
                 let current = player.currentTime().seconds
                 let duration = player.currentItem?.duration.seconds ?? 30
-                if duration.isFinite && duration > 0 {
-                    self.previewProgress = min(max(current / duration, 0), 1)
+                if duration.isFinite && duration > 1 && current.isFinite && current >= 0 {
+                    let nextProgress = min(max(current / duration, 0), 1)
+                    self.previewProgress = max(self.previewProgress, nextProgress)
                 }
             }
         }

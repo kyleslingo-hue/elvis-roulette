@@ -345,12 +345,13 @@ struct ContentView: View {
                         .font(.caption.weight(.semibold))
                         .foregroundStyle(RetroTheme.sunCream)
                     Spacer()
-                    if musicService.isLookingUp {
-                        ProgressView()
-                            .scaleEffect(0.7)
-                            .tint(RetroTheme.vegasGold)
-                    }
+                    ProgressView()
+                        .scaleEffect(0.7)
+                        .tint(RetroTheme.vegasGold)
+                        .frame(width: 16, height: 16)
+                        .opacity(musicService.isLookingUp ? 1 : 0)
                 }
+                .frame(height: 18)
 
                 GeometryReader { proxy in
                     ZStack(alignment: .leading) {

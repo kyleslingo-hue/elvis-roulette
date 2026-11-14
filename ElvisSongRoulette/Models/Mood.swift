@@ -10,6 +10,8 @@ enum Mood: String, CaseIterable, Codable, Identifiable, Hashable {
     case heartbroken
     case restless
     case gospelPeace
+    case christmas
+    case lisa
 
     var id: String { rawValue }
 
@@ -23,6 +25,8 @@ enum Mood: String, CaseIterable, Codable, Identifiable, Hashable {
         case .heartbroken: return "Heartbroken"
         case .restless: return "Routinely Restless"
         case .gospelPeace: return "Gospel Peace"
+        case .christmas: return "Christmas"
+        case .lisa: return "Lisa"
         }
     }
 
@@ -36,6 +40,8 @@ enum Mood: String, CaseIterable, Codable, Identifiable, Hashable {
         case .heartbroken: return "heart.slash.fill"
         case .restless: return "road.lanes"
         case .gospelPeace: return "sun.max.fill"
+        case .christmas: return "snowflake"
+        case .lisa: return "music.mic"
         }
     }
 
@@ -49,6 +55,8 @@ enum Mood: String, CaseIterable, Codable, Identifiable, Hashable {
         case .heartbroken: return "Unfiltered ache & blue-hour confessions"
         case .restless: return "Highway rockabilly & Memphis soul"
         case .gospelPeace: return "Sacred harmonies & Graceland grace"
+        case .christmas: return "Graceland holiday classics & winter warmth"
+        case .lisa: return "Lisa Marie Presley solo & duet tracks"
         }
     }
 
@@ -71,6 +79,10 @@ enum Mood: String, CaseIterable, Codable, Identifiable, Hashable {
             return ["restless", "antsy", "bored", "travel", "road", "drive", "wander", "edge"]
         case .gospelPeace:
             return ["gospel", "peace", "calm", "spiritual", "serene", "faith", "quiet", "hopeful", "relaxed"]
+        case .christmas:
+            return ["christmas", "holiday", "xmas", "santa", "winter", "snow", "merry", "jingle", "silent night", "bethlehem", "noel"]
+        case .lisa:
+            return ["lisa", "lisa marie", "storm", "grace", "lights out", "now what", "to whom it may concern"]
         }
     }
 }

@@ -73,7 +73,8 @@
     "year": 2003,
     "era": "2000s Solo Debut",
     "moods": [
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "sad",
@@ -258,7 +259,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "rebellious",
-      "highEnergy"
+      "highEnergy",
+      "lisa"
     ],
     "keywords": [
       "angry",
@@ -504,7 +506,8 @@
     "era": "Legacy Duet",
     "moods": [
       "heartbroken",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "duet",
@@ -798,7 +801,8 @@
     "year": 1957,
     "era": "Gospel Sessions",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "christmas"
     ],
     "keywords": [
       "calm",
@@ -919,7 +923,8 @@
     "year": 2012,
     "era": "2010s Americana / Roots",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "lisa"
     ],
     "keywords": [
       "americana",
@@ -977,7 +982,8 @@
     "moods": [
       "gospelPeace",
       "heartbroken",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "heartbroken",
@@ -1321,7 +1327,8 @@
     "year": 2003,
     "era": "2000s Solo Debut",
     "moods": [
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "sad",
@@ -2385,7 +2392,8 @@
     "year": 1957,
     "era": "1950s Rock 'n' Roll",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -2445,7 +2453,8 @@
     "year": 1957,
     "era": "1950s Rock 'n' Roll",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -2968,7 +2977,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -3029,7 +3039,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -3089,7 +3100,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -27096,7 +27108,8 @@
     "year": 2018,
     "era": "Post-1998 Legacy & Gospel Duet",
     "moods": [
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "duet",
@@ -29799,7 +29812,8 @@
     "moods": [
       "highEnergy",
       "restless",
-      "melancholy"
+      "melancholy",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -29857,7 +29871,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -29915,7 +29930,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -34670,7 +34686,8 @@
     "year": 1963,
     "era": "1960s Studio & Soundtracks",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1963",
@@ -37713,7 +37730,8 @@
     "year": 1966,
     "era": "1960s Studio & Soundtracks",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1966",
@@ -42125,7 +42143,8 @@
     "year": 1970,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1970",
@@ -42709,7 +42728,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -42784,7 +42804,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -42930,7 +42951,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -43006,7 +43028,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -43150,7 +43173,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -44694,7 +44718,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -46646,7 +46671,8 @@
     "year": 1957,
     "era": "1950s Rock 'n' Roll",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -47023,7 +47049,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -47067,7 +47094,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -47108,7 +47136,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -47188,7 +47217,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -51358,7 +51388,8 @@
     "year": 1965,
     "era": "1960s Studio & Soundtracks",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1965",
@@ -54168,7 +54199,8 @@
     "year": 1968,
     "era": "1968 Comeback Era",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1968",
@@ -55952,7 +55984,8 @@
     "year": 1970,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1970",
@@ -57369,7 +57402,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57411,7 +57445,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57453,7 +57488,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57493,7 +57529,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57532,7 +57569,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57573,7 +57611,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57615,7 +57654,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57656,7 +57696,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57734,7 +57775,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -57775,7 +57817,8 @@
     "year": 1971,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1971",
@@ -58412,7 +58455,8 @@
     "year": 1972,
     "era": "1970s RCA & Live",
     "moods": [
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1972",
@@ -59542,7 +59586,8 @@
     "year": 1974,
     "era": "1970s RCA & Live",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "christmas"
     ],
     "keywords": [
       "1974",
@@ -63297,7 +63342,8 @@
     "year": 1968,
     "era": "1968 Comeback Era",
     "moods": [
-      "melancholy"
+      "melancholy",
+      "christmas"
     ],
     "keywords": [
       "1968",
@@ -64905,7 +64951,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -64946,7 +64993,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -64989,7 +65037,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -65031,7 +65080,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -65111,7 +65161,8 @@
     "era": "1950s Rock 'n' Roll",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "christmas"
     ],
     "keywords": [
       "1957",
@@ -65712,7 +65763,8 @@
     "year": 2003,
     "era": "2000s Solo Debut",
     "moods": [
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2003",
@@ -65772,7 +65824,8 @@
     "era": "2000s Solo Debut",
     "moods": [
       "sultry",
-      "inLove"
+      "inLove",
+      "lisa"
     ],
     "keywords": [
       "2003",
@@ -65831,7 +65884,8 @@
     "era": "2000s Solo Debut",
     "moods": [
       "heartbroken",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2003",
@@ -65890,7 +65944,8 @@
     "era": "2000s Solo Debut",
     "moods": [
       "rebellious",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2003",
@@ -65951,7 +66006,8 @@
     "era": "2000s Solo Debut",
     "moods": [
       "rebellious",
-      "highEnergy"
+      "highEnergy",
+      "lisa"
     ],
     "keywords": [
       "2003",
@@ -66010,7 +66066,8 @@
     "era": "2000s Solo Debut",
     "moods": [
       "rebellious",
-      "highEnergy"
+      "highEnergy",
+      "lisa"
     ],
     "keywords": [
       "2003",
@@ -66070,7 +66127,8 @@
     "era": "2000s Solo Debut",
     "moods": [
       "rebellious",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2003",
@@ -66129,7 +66187,8 @@
     "era": "2000s Solo Debut",
     "moods": [
       "gospelPeace",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2003",
@@ -66188,7 +66247,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "rebellious",
-      "highEnergy"
+      "highEnergy",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66247,7 +66307,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66305,7 +66366,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66364,7 +66426,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "highEnergy",
-      "restless"
+      "restless",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66421,7 +66484,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "rebellious",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66479,7 +66543,8 @@
     "year": 2005,
     "era": "2000s Alt-Rock",
     "moods": [
-      "sultry"
+      "sultry",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66537,7 +66602,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "rebellious",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66595,7 +66661,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "rebellious",
-      "highEnergy"
+      "highEnergy",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66652,7 +66719,8 @@
     "year": 2005,
     "era": "2000s Alt-Rock",
     "moods": [
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66710,7 +66778,8 @@
     "year": 2005,
     "era": "2000s Alt-Rock",
     "moods": [
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66769,7 +66838,8 @@
     "era": "2000s Alt-Rock",
     "moods": [
       "heartbroken",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2005",
@@ -66829,7 +66899,8 @@
     "year": 2012,
     "era": "2010s Americana / Roots",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -66882,7 +66953,8 @@
     "era": "2010s Americana / Roots",
     "moods": [
       "gospelPeace",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -66937,7 +67009,8 @@
     "moods": [
       "gospelPeace",
       "rebellious",
-      "highEnergy"
+      "highEnergy",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -66992,7 +67065,8 @@
     "year": 2012,
     "era": "2010s Americana / Roots",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67048,7 +67122,8 @@
     "era": "2010s Americana / Roots",
     "moods": [
       "gospelPeace",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67104,7 +67179,8 @@
     "era": "2010s Americana / Roots",
     "moods": [
       "gospelPeace",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67158,7 +67234,8 @@
     "era": "2010s Americana / Roots",
     "moods": [
       "gospelPeace",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67213,7 +67290,8 @@
     "moods": [
       "gospelPeace",
       "heartbroken",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67269,7 +67347,8 @@
     "era": "2010s Americana / Roots",
     "moods": [
       "gospelPeace",
-      "melancholy"
+      "melancholy",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67325,7 +67404,8 @@
     "year": 2012,
     "era": "2010s Americana / Roots",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67378,7 +67458,8 @@
     "year": 2012,
     "era": "2010s Americana / Roots",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67435,7 +67516,8 @@
     "year": 2012,
     "era": "2010s Americana / Roots",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "lisa"
     ],
     "keywords": [
       "2012",
@@ -67488,7 +67570,8 @@
     "year": 2012,
     "era": "2010s Americana / Roots",
     "moods": [
-      "gospelPeace"
+      "gospelPeace",
+      "lisa"
     ],
     "keywords": [
       "2012",

@@ -8,7 +8,7 @@ struct ContentView: View {
     @AppStorage("includeUnavailableTracks") private var includeUnavailableTracks = true
     @AppStorage("defaultArtistFilter") private var defaultArtistFilterRaw = ArtistFilter.all.rawValue
 
-    @State private var selectedMood: Mood? = .melancholy
+    @State private var selectedMood: Mood? = nil
     @State private var moodInput: String = ""
     @State private var artistFilter: ArtistFilter = .all
     @State private var currentSong: SongRecord?

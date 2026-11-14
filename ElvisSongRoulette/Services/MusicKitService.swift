@@ -30,7 +30,7 @@ final class MusicKitService {
     private var endObserver: NSObjectProtocol?
     private var isUsingApplicationMusicPlayer = false
     private var appPlayerMonitorTask: Task<Void, Never>?
-    private var lastLookedUpRecordID: String?
+    private(set) var resolvedRecordID: String?
     private var cachedCanPlayCatalogContent: Bool?
 
     var isAuthorized: Bool {
@@ -49,7 +49,7 @@ final class MusicKitService {
 
     func lookupCatalogSong(for record: SongRecord) async {
         stopPreview()
-        lastLookedUpRecordID = record.id
+        resolvedRecordID = record.id
         resolvedSong = nil
         resolvedMetadata = nil
         resolvedTitle = nil
@@ -125,7 +125,7 @@ final class MusicKitService {
         defer { isLookingUp = false }
 
         authorizationStatus = MusicAuthorization.currentStatus
-        if lastLookedUpRecordID != record.id || (resolvedSong == nil && previewURL == nil) {
+        if resolvedRecordID != record.id || (resolvedSong == nil && previewURL == nil) {
             await lookupCatalogSong(for: record)
         }
 

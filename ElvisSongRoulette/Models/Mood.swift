@@ -74,7 +74,7 @@ enum Mood: String, CaseIterable, Codable, Identifiable, Hashable {
         case .sultry:
             return ["sultry", "late night", "midnight", "sexy", "smooth", "chill", "moody", "cool"]
         case .heartbroken:
-            return ["heartbroken", "heartbreak", "breakup", "cry", "crying", "hurt", "miss", "regret"]
+            return ["heartbroken", "heartbreak", "breakup", "cry", "crying", "hurt", "miss", "missing", "regret", "alone", "lonely"]
         case .restless:
             return ["restless", "antsy", "bored", "travel", "road", "drive", "wander", "edge"]
         case .gospelPeace:

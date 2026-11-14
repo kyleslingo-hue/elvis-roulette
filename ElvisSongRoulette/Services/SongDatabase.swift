@@ -107,7 +107,8 @@ final class SongDatabase {
         let stopWords: Set<String> = [
             "i", "im", "i'm", "feel", "feeling", "mood", "songs", "song",
             "music", "play", "some", "a", "an", "the", "for", "want", "to",
-            "hear", "like", "very", "really", "in", "on", "with"
+            "hear", "like", "very", "really", "in", "on", "with", "someone",
+            "somebody", "something", "right", "now", "today", "myself"
         ]
         let tokens = trimmedQuery
             .components(separatedBy: CharacterSet.alphanumerics.inverted)

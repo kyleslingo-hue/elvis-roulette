@@ -141,10 +141,13 @@ struct PlaylistGeneratorView: View {
     }
 
     private func nowPlayingCard(_ song: SongRecord) -> some View {
-        VStack(spacing: 14) {
+        let isResolvedForSong = musicService.resolvedRecordID == song.id
+        let isPlayingThisSong = isResolvedForSong && musicService.isPlayingPreview
+
+        return VStack(spacing: 14) {
             HStack(spacing: 14) {
                 Group {
-                    if let artURL = musicService.artworkURL {
+                    if isResolvedForSong, let artURL = musicService.artworkURL {
                         AsyncImage(url: artURL) { phase in
                             switch phase {
                             case .success(let image):
@@ -161,17 +164,17 @@ struct PlaylistGeneratorView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(musicService.isPlayingPreview ? "NOW PLAYING" : "READY TO PLAY")
+                    Text(isPlayingThisSong ? "NOW PLAYING" : "READY TO PLAY")
                         .font(.caption2.weight(.bold))
                         .tracking(1.1)
                         .foregroundStyle(RetroTheme.vegasGold)
 
-                    Text(musicService.resolvedTitle ?? song.title)
+                    Text((isResolvedForSong ? musicService.resolvedTitle : nil) ?? song.title)
                         .font(.headline)
                         .foregroundStyle(RetroTheme.sunCream)
                         .lineLimit(1)
 
-                    Text("\(song.artist) • \(musicService.resolvedAlbumTitle ?? song.album)")
+                    Text("\(song.artist) • \((isResolvedForSong ? musicService.resolvedAlbumTitle : nil) ?? song.album)")
                         .font(.caption)
                         .foregroundStyle(RetroTheme.mutedCream)
                         .lineLimit(1)
@@ -193,7 +196,7 @@ struct PlaylistGeneratorView: View {
                         .frame(height: 5)
                     Capsule()
                         .fill(RetroTheme.vegasGold)
-                        .frame(width: proxy.size.width * musicService.previewProgress, height: 5)
+                        .frame(width: proxy.size.width * (isResolvedForSong ? musicService.previewProgress : 0), height: 5)
                 }
             }
             .frame(height: 5)
@@ -209,14 +212,14 @@ struct PlaylistGeneratorView: View {
                 .disabled(!canGoPrevious)
 
                 Button {
-                    if musicService.isPlayingPreview {
+                    if isPlayingThisSong {
                         playbackTask?.cancel()
                         musicService.stopPreview()
                     } else if let activeIndex {
                         playTrack(at: activeIndex)
                     }
                 } label: {
-                    Image(systemName: musicService.isPlayingPreview ? "pause.fill" : "play.fill")
+                    Image(systemName: isPlayingThisSong ? "pause.fill" : "play.fill")
                         .font(.title3)
                         .foregroundStyle(RetroTheme.vinylBlack)
                         .frame(width: 48, height: 48)
@@ -375,13 +378,40 @@ struct PlaylistGeneratorView: View {
     private func generatePlaylist() {
         let trimmed = feelingInput.trimmingCharacters(in: .whitespacesAndNewlines)
         var matches = database.matchingSongs(mood: nil, query: trimmed, artistFilter: .all)
-        if matches.isEmpty {
-            matches = database.songs
+
+        // If a query returned fewer tracks than requested, top up with inferred mood or catalog tracks
+        if matches.count < trackCount {
+            let existingIDs = Set(matches.map(\.id))
+            let lower = trimmed.lowercased()
+            let inferredMoods = Mood.allCases.filter { mood in
+                mood.displayName.lowercased().contains(lower) ||
+                mood.searchSynonyms.contains(where: { lower.contains($0) || $0.contains(lower) })
+            }
+            let moodExtras = database.songs.filter { song in
+                !existingIDs.contains(song.id) &&
+                !inferredMoods.isEmpty &&
+                song.moods.contains(where: { inferredMoods.contains($0) })
+            }.shuffled()
+            matches.append(contentsOf: moodExtras)
         }
+
+        if matches.count < trackCount {
+            let existingIDs = Set(matches.map(\.id))
+            let catalogExtras = database.songs.filter { !existingIDs.contains($0.id) }.shuffled()
+            matches.append(contentsOf: catalogExtras)
+        }
+
         generatedTracks = Array(matches.shuffled().prefix(trackCount))
         activeIndex = generatedTracks.isEmpty ? nil : 0
         savedToLibrary = false
         playlistName = trimmed.isEmpty ? "Elvis Surprise Mix" : "Elvis: \(trimmed.capitalized)"
+
+        if let first = generatedTracks.first {
+            playbackTask?.cancel()
+            playbackTask = Task {
+                await musicService.lookupCatalogSong(for: first)
+            }
+        }
     }
 
     private func playTrack(at index: Int) {

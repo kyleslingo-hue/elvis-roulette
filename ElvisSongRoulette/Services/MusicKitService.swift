@@ -26,6 +26,7 @@ final class MusicKitService {
     private var player: AVPlayer?
     private var progressTimer: Timer?
     private var endObserver: NSObjectProtocol?
+    private var isUsingApplicationMusicPlayer = false
 
     var isAuthorized: Bool {
         authorizationStatus == .authorized
@@ -95,13 +96,15 @@ final class MusicKitService {
                 await lookupCatalogSong(for: record)
             }
 
-            // Try full Apple Music playback if authorized & subscribed
+            #if !targetEnvironment(simulator)
+            // Try full Apple Music playback on physical devices when authorized & subscribed
             if let song = resolvedSong,
                let subscription = try? await MusicSubscription.current,
                subscription.canPlayCatalogContent {
                 do {
                     ApplicationMusicPlayer.shared.queue = [song]
                     try await ApplicationMusicPlayer.shared.play()
+                    isUsingApplicationMusicPlayer = true
                     isPlayingPreview = true
                     statusBanner = nil
                     return
@@ -109,6 +112,7 @@ final class MusicKitService {
                     // Fall back to AVPlayer stream below
                 }
             }
+            #endif
 
             guard let previewURL else {
                 statusBanner = "No playable audio available for \(record.title)."
@@ -178,7 +182,10 @@ final class MusicKitService {
     }
 
     func stopPreview() {
-        ApplicationMusicPlayer.shared.stop()
+        if isUsingApplicationMusicPlayer {
+            ApplicationMusicPlayer.shared.stop()
+            isUsingApplicationMusicPlayer = false
+        }
         player?.pause()
         player = nil
         progressTimer?.invalidate()

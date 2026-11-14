@@ -447,7 +447,7 @@ struct ContentView: View {
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
     }
 
-    private func spinTrack(startAutoplay: Bool = true, remainingRetries: Int = 4) {
+    private func spinTrack(startAutoplay: Bool = true) {
         isAutoplaySessionActive = startAutoplay && autoPlayOnSpin
         spinTask?.cancel()
 
@@ -467,8 +467,8 @@ struct ContentView: View {
             guard !Task.isCancelled else { return }
             if startAutoplay && autoPlayOnSpin {
                 let started = await musicService.play(record: next)
-                if !started && !Task.isCancelled && remainingRetries > 0 {
-                    spinTrack(startAutoplay: true, remainingRetries: remainingRetries - 1)
+                if !started {
+                    isAutoplaySessionActive = false
                 }
             }
         }

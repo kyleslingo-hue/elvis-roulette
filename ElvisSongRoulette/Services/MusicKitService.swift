@@ -72,7 +72,7 @@ final class MusicKitService {
                 )
                 request.limit = 10
                 let response = try await request.response()
-                if let match = response.songs.first(where: { Self.isMatchingSong(title: $0.title, artist: $0.artistName, for: record) }) {
+                if let match = Self.bestSongMatch(in: Array(response.songs), for: record, title: { $0.title }, artist: { $0.artistName }) {
                     resolvedSong = match
                     resolvedTitle = match.title
                     resolvedAlbumTitle = match.albumTitle
@@ -218,11 +218,9 @@ final class MusicKitService {
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let decoded = try JSONDecoder().decode(ITunesSearchResponse.self, from: data)
-            let match = decoded.results.first(where: {
-                Self.isMatchingSong(title: $0.trackName ?? "", artist: $0.artistName ?? "", for: record) && $0.previewUrl != nil
-            }) ?? decoded.results.first(where: {
-                Self.isMatchingSong(title: $0.trackName ?? "", artist: $0.artistName ?? "", for: record)
-            })
+            let withPreview = decoded.results.filter { $0.previewUrl != nil }
+            let match = Self.bestSongMatch(in: withPreview, for: record, title: { $0.trackName ?? "" }, artist: { $0.artistName ?? "" })
+                ?? Self.bestSongMatch(in: decoded.results, for: record, title: { $0.trackName ?? "" }, artist: { $0.artistName ?? "" })
 
             guard let match else { return }
             if resolvedTitle == nil {
@@ -395,6 +393,31 @@ final class MusicKitService {
         }
     }
 
+    private static func bestSongMatch<T>(
+        in items: [T],
+        for record: SongRecord,
+        title: (T) -> String,
+        artist: (T) -> String
+    ) -> T? {
+        let targetArtist = record.isLisaMarie ? "lisa marie" : "elvis"
+        let artistMatches = items.filter { artist($0).localizedCaseInsensitiveContains(targetArtist) }
+        guard !artistMatches.isEmpty else { return nil }
+
+        let recordNorm = normalizeTitle(record.title)
+        if !recordNorm.isEmpty {
+            if let exact = artistMatches.first(where: { normalizeTitle(title($0)) == recordNorm }) {
+                return exact
+            }
+            if let partial = artistMatches.first(where: {
+                let candidateNorm = normalizeTitle(title($0))
+                return !candidateNorm.isEmpty && (candidateNorm.contains(recordNorm) || recordNorm.contains(candidateNorm))
+            }) {
+                return partial
+            }
+        }
+        return artistMatches.first
+    }
+
     private static func isMatchingSong(title: String, artist: String, for record: SongRecord) -> Bool {
         let targetArtist = record.isLisaMarie ? "lisa marie" : "elvis"
         guard artist.localizedCaseInsensitiveContains(targetArtist) else {
@@ -403,11 +426,15 @@ final class MusicKitService {
         let candidateNorm = normalizeTitle(title)
         let recordNorm = normalizeTitle(record.title)
         guard !candidateNorm.isEmpty, !recordNorm.isEmpty else { return false }
-        return candidateNorm == recordNorm
+        return candidateNorm == recordNorm || candidateNorm.contains(recordNorm) || recordNorm.contains(candidateNorm)
     }
 
     private static func normalizeTitle(_ raw: String) -> String {
-        let stripped = raw.replacingOccurrences(of: "\\([^)]*\\)", with: "", options: .regularExpression)
+        var stripped = raw.replacingOccurrences(of: "\\([^)]*\\)", with: "", options: .regularExpression)
+        stripped = stripped.replacingOccurrences(of: "\\[[^\\]]*\\]", with: "", options: .regularExpression)
+        if let dashRange = stripped.range(of: " - ") {
+            stripped = String(stripped[..<dashRange.lowerBound])
+        }
         return stripped.lowercased().filter { $0.isLetter || $0.isNumber }
     }
 

@@ -17,7 +17,7 @@ struct ElvisSongRouletteApp: App {
                                 Label("Roulette", systemImage: "die.face.5.fill")
                             }
 
-                        PlaylistGeneratorView(musicService: musicService, database: database)
+                        PlaylistGeneratorView(musicService: musicService)
                             .tabItem {
                                 Label("Playlists", systemImage: "music.note.list")
                             }

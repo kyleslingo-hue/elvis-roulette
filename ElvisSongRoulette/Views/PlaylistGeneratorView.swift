@@ -1,21 +1,25 @@
 import SwiftUI
+#if canImport(FoundationModels)
+import FoundationModels
+#endif
 
-/// Standalone mood-to-playlist generator with in-app Now Playing controls and Apple Music export.
+/// Standalone mood-to-playlist generator powered by Apple Foundation Models & direct Apple Music search.
 struct PlaylistGeneratorView: View {
     let musicService: MusicKitService
-    let database: SongDatabase
 
     @State private var feelingInput = ""
     @State private var trackCount = 15
-    @State private var generatedTracks: [SongRecord] = []
+    @State private var generatedTracks: [AppleMusicPlaylistTrack] = []
     @State private var activeIndex: Int? = nil
     @State private var playlistName = "Elvis Mood Mix"
+    @State private var isGenerating = false
     @State private var savedToLibrary = false
+    @State private var generationTask: Task<Void, Never>?
     @State private var playbackTask: Task<Void, Never>?
 
-    private let quickFeelings = ["Christmas", "Late Night", "Heartbroken", "High Energy", "Gospel", "Lisa Marie"]
+    private let quickFeelings = ["Missing someone", "Christmas", "Late Night", "Heartbroken", "High Energy", "Gospel", "Lisa Marie"]
 
-    private var activeSong: SongRecord? {
+    private var activeTrack: AppleMusicPlaylistTrack? {
         guard let activeIndex, generatedTracks.indices.contains(activeIndex) else { return nil }
         return generatedTracks[activeIndex]
     }
@@ -26,8 +30,8 @@ struct PlaylistGeneratorView: View {
                 VStack(spacing: 16) {
                     feelingPromptCard
 
-                    if let song = activeSong {
-                        nowPlayingCard(song)
+                    if let track = activeTrack {
+                        nowPlayingCard(track)
                     }
 
                     if !generatedTracks.isEmpty {
@@ -54,7 +58,7 @@ struct PlaylistGeneratorView: View {
             HStack(spacing: 10) {
                 Image(systemName: "sparkles")
                     .foregroundStyle(RetroTheme.vegasGold)
-                TextField("e.g. heartbroken, christmas, late night, Vegas...", text: $feelingInput)
+                TextField("e.g. missing someone, christmas, late night, Vegas...", text: $feelingInput)
                     .textFieldStyle(.plain)
                     .foregroundStyle(RetroTheme.sunCream)
                     .submitLabel(.go)
@@ -118,8 +122,14 @@ struct PlaylistGeneratorView: View {
                     generatePlaylist()
                 } label: {
                     HStack(spacing: 6) {
-                        Image(systemName: "wand.and.stars")
-                        Text("Generate")
+                        if isGenerating {
+                            ProgressView()
+                                .scaleEffect(0.75)
+                                .tint(RetroTheme.vinylBlack)
+                        } else {
+                            Image(systemName: "wand.and.stars")
+                        }
+                        Text(isGenerating ? "Building..." : "Generate")
                             .fontWeight(.bold)
                     }
                     .font(.subheadline)
@@ -129,6 +139,7 @@ struct PlaylistGeneratorView: View {
                     .foregroundStyle(RetroTheme.vinylBlack)
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
+                .disabled(isGenerating)
             }
         }
         .padding(16)
@@ -140,14 +151,14 @@ struct PlaylistGeneratorView: View {
         )
     }
 
-    private func nowPlayingCard(_ song: SongRecord) -> some View {
-        let isResolvedForSong = musicService.resolvedRecordID == song.id
-        let isPlayingThisSong = isResolvedForSong && musicService.isPlayingPreview
+    private func nowPlayingCard(_ track: AppleMusicPlaylistTrack) -> some View {
+        let isResolvedForTrack = musicService.resolvedRecordID == track.id
+        let isPlayingThisTrack = isResolvedForTrack && musicService.isPlayingPreview
 
         return VStack(spacing: 14) {
             HStack(spacing: 14) {
                 Group {
-                    if isResolvedForSong, let artURL = musicService.artworkURL {
+                    if let artURL = track.artworkURL ?? (isResolvedForTrack ? musicService.artworkURL : nil) {
                         AsyncImage(url: artURL) { phase in
                             switch phase {
                             case .success(let image):
@@ -164,17 +175,17 @@ struct PlaylistGeneratorView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(isPlayingThisSong ? "NOW PLAYING" : "READY TO PLAY")
+                    Text(isPlayingThisTrack ? "NOW PLAYING" : "READY TO PLAY")
                         .font(.caption2.weight(.bold))
                         .tracking(1.1)
                         .foregroundStyle(RetroTheme.vegasGold)
 
-                    Text((isResolvedForSong ? musicService.resolvedTitle : nil) ?? song.title)
+                    Text(track.title)
                         .font(.headline)
                         .foregroundStyle(RetroTheme.sunCream)
                         .lineLimit(1)
 
-                    Text("\(song.artist) • \((isResolvedForSong ? musicService.resolvedAlbumTitle : nil) ?? song.album)")
+                    Text("\(track.artistName) • \(track.albumTitle)")
                         .font(.caption)
                         .foregroundStyle(RetroTheme.mutedCream)
                         .lineLimit(1)
@@ -196,7 +207,7 @@ struct PlaylistGeneratorView: View {
                         .frame(height: 5)
                     Capsule()
                         .fill(RetroTheme.vegasGold)
-                        .frame(width: proxy.size.width * (isResolvedForSong ? musicService.previewProgress : 0), height: 5)
+                        .frame(width: proxy.size.width * (isResolvedForTrack ? musicService.previewProgress : 0), height: 5)
                 }
             }
             .frame(height: 5)
@@ -212,14 +223,14 @@ struct PlaylistGeneratorView: View {
                 .disabled(!canGoPrevious)
 
                 Button {
-                    if isPlayingThisSong {
+                    if isPlayingThisTrack {
                         playbackTask?.cancel()
                         musicService.stopPreview()
                     } else if let activeIndex {
                         playTrack(at: activeIndex)
                     }
                 } label: {
-                    Image(systemName: isPlayingThisSong ? "pause.fill" : "play.fill")
+                    Image(systemName: isPlayingThisTrack ? "pause.fill" : "play.fill")
                         .font(.title3)
                         .foregroundStyle(RetroTheme.vinylBlack)
                         .frame(width: 48, height: 48)
@@ -253,7 +264,7 @@ struct PlaylistGeneratorView: View {
                     Text(playlistName)
                         .font(.headline)
                         .foregroundStyle(RetroTheme.sunCream)
-                    Text("\(generatedTracks.count) tracks")
+                    Text("\(generatedTracks.count) tracks from Apple Music")
                         .font(.caption)
                         .foregroundStyle(RetroTheme.mutedCream)
                 }
@@ -277,8 +288,8 @@ struct PlaylistGeneratorView: View {
                     Task {
                         savedToLibrary = await musicService.createPlaylist(
                             name: playlistName,
-                            description: "Generated from feeling '\(feelingInput.isEmpty ? "Surprise Mix" : feelingInput)' in Elvis Song Roulette.",
-                            records: generatedTracks
+                            description: "Generated from feeling '\(feelingInput.isEmpty ? "Surprise Mix" : feelingInput)' via Elvis Song Roulette.",
+                            tracks: generatedTracks
                         )
                     }
                 } label: {
@@ -320,7 +331,7 @@ struct PlaylistGeneratorView: View {
             }
 
             LazyVStack(spacing: 8) {
-                ForEach(Array(generatedTracks.enumerated()), id: \.element.id) { index, song in
+                ForEach(Array(generatedTracks.enumerated()), id: \.element.id) { index, track in
                     Button {
                         playTrack(at: index)
                     } label: {
@@ -331,11 +342,11 @@ struct PlaylistGeneratorView: View {
                                 .frame(width: 22)
 
                             VStack(alignment: .leading, spacing: 2) {
-                                Text(song.title)
+                                Text(track.title)
                                     .font(.subheadline.weight(.semibold))
                                     .foregroundStyle(activeIndex == index ? RetroTheme.vegasGold : RetroTheme.sunCream)
                                     .lineLimit(1)
-                                Text("\(song.artist) • \(String(song.year))")
+                                Text(track.releaseYear.map { "\(track.artistName) • \($0)" } ?? track.artistName)
                                     .font(.caption)
                                     .foregroundStyle(RetroTheme.mutedCream)
                                     .lineLimit(1)
@@ -377,47 +388,172 @@ struct PlaylistGeneratorView: View {
 
     private func generatePlaylist() {
         let trimmed = feelingInput.trimmingCharacters(in: .whitespacesAndNewlines)
-        var matches = database.matchingSongs(mood: nil, query: trimmed, artistFilter: .all)
-
-        // If a query returned fewer tracks than requested, top up with inferred mood or catalog tracks
-        if matches.count < trackCount {
-            let existingIDs = Set(matches.map(\.id))
-            let lower = trimmed.lowercased()
-            let inferredMoods = Mood.allCases.filter { mood in
-                mood.displayName.lowercased().contains(lower) ||
-                mood.searchSynonyms.contains(where: { lower.contains($0) || $0.contains(lower) })
-            }
-            let moodExtras = database.songs.filter { song in
-                !existingIDs.contains(song.id) &&
-                !inferredMoods.isEmpty &&
-                song.moods.contains(where: { inferredMoods.contains($0) })
-            }.shuffled()
-            matches.append(contentsOf: moodExtras)
-        }
-
-        if matches.count < trackCount {
-            let existingIDs = Set(matches.map(\.id))
-            let catalogExtras = database.songs.filter { !existingIDs.contains($0.id) }.shuffled()
-            matches.append(contentsOf: catalogExtras)
-        }
-
-        generatedTracks = Array(matches.shuffled().prefix(trackCount))
-        activeIndex = generatedTracks.isEmpty ? nil : 0
+        generationTask?.cancel()
         savedToLibrary = false
-        playlistName = trimmed.isEmpty ? "Elvis Surprise Mix" : "Elvis: \(trimmed.capitalized)"
+        isGenerating = true
 
-        if let first = generatedTracks.first {
-            playbackTask?.cancel()
-            playbackTask = Task {
-                await musicService.lookupCatalogSong(for: first)
+        generationTask = Task {
+            defer { isGenerating = false }
+
+            let (title, queries) = await buildSearchPlan(for: trimmed, count: trackCount)
+            guard !Task.isCancelled else { return }
+
+            let tracks = await musicService.searchAppleMusicTracks(queries: queries, targetCount: trackCount)
+            guard !Task.isCancelled else { return }
+
+            playlistName = title
+            generatedTracks = tracks
+            activeIndex = tracks.isEmpty ? nil : 0
+        }
+    }
+
+    private func buildSearchPlan(for feeling: String, count: Int) async -> (String, [String]) {
+        #if canImport(FoundationModels)
+        if #available(iOS 26.0, *), SystemLanguageModel.default.availability == .available {
+            do {
+                let session = LanguageModelSession(
+                    instructions: "You are an Elvis Presley and Lisa Marie Presley music curator. Given how the user is feeling, provide a short playlist title and a list of specific Elvis Presley or Lisa Marie Presley song search queries (e.g. 'Always on My Mind Elvis Presley', 'Lights Out Lisa Marie Presley') that fit that mood."
+                )
+                let prompt = feeling.isEmpty
+                    ? "Surprise me with \(count) diverse Elvis Presley and Lisa Marie Presley songs."
+                    : "The user says they are feeling: \"\(feeling)\". Suggest \(count) Elvis Presley and/or Lisa Marie Presley song queries that match."
+                let response = try await session.respond(to: prompt, generating: FoundationMoodPlan.self)
+                let queries = response.content.songQueries.filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+                if !queries.isEmpty {
+                    let title = response.content.playlistTitle.trimmingCharacters(in: .whitespacesAndNewlines)
+                    return (title.isEmpty ? "Elvis: \(feeling.capitalized)" : title, queries)
+                }
+            } catch {
+                // Fall back to direct Apple Music search queries below
             }
+        }
+        #endif
+
+        return fallbackSearchPlan(for: feeling)
+    }
+
+    private func fallbackSearchPlan(for feeling: String) -> (String, [String]) {
+        let lower = feeling.lowercased()
+        let title = feeling.isEmpty ? "Elvis Surprise Mix" : "Elvis: \(feeling.capitalized)"
+
+        if lower.contains("miss") || lower.contains("lonely") || lower.contains("alone") || lower.contains("heartbreak") || lower.contains("heartbroken") || lower.contains("sad") {
+            return (title, [
+                "Always on My Mind Elvis Presley",
+                "Separate Ways Elvis Presley",
+                "Are You Lonesome Tonight Elvis Presley",
+                "In the Ghetto Elvis Presley",
+                "Kentucky Rain Elvis Presley",
+                "Heartbreak Hotel Elvis Presley",
+                "It's Over Elvis Presley",
+                "Over Me Lisa Marie Presley",
+                "Lights Out Lisa Marie Presley",
+                "You Gave Me a Mountain Elvis Presley",
+                "Don't Cry Daddy Elvis Presley",
+                "Love Me Tender Elvis Presley",
+                "I'll Be Home for Christmas Elvis Presley",
+                "Unchained Melody Elvis Presley",
+                "That's Someone You Never Forget Elvis Presley"
+            ])
+        } else if lower.contains("christmas") || lower.contains("holiday") || lower.contains("xmas") || lower.contains("winter") {
+            return ("Elvis Christmas Mix", [
+                "Blue Christmas Elvis Presley",
+                "Santa Claus Is Back in Town Elvis Presley",
+                "If Every Day Was Like Christmas Elvis Presley",
+                "Here Comes Santa Claus Elvis Presley",
+                "White Christmas Elvis Presley",
+                "Silent Night Elvis Presley",
+                "Winter Wonderland Elvis Presley",
+                "Silver Bells Elvis Presley",
+                "O Come All Ye Faithful Elvis Presley",
+                "I'll Be Home for Christmas Elvis Presley",
+                "Merry Christmas Baby Elvis Presley",
+                "The Wonderful World of Christmas Elvis Presley"
+            ])
+        } else if lower.contains("lisa") {
+            return ("Lisa Marie Presley Mix", [
+                "Lights Out Lisa Marie Presley",
+                "Dirty Laundry Lisa Marie Presley",
+                "Idiot Lisa Marie Presley",
+                "You Ain't Seen Nothin' Yet Lisa Marie Presley",
+                "Over Me Lisa Marie Presley",
+                "Storm & Grace Lisa Marie Presley",
+                "Sinking In Lisa Marie Presley",
+                "Shine Lisa Marie Presley",
+                "Nobody Noticed It Lisa Marie Presley",
+                "Weary Lisa Marie Presley",
+                "Now What Lisa Marie Presley",
+                "In the Ghetto Elvis Presley Lisa Marie"
+            ])
+        } else if lower.contains("gospel") || lower.contains("peace") || lower.contains("church") || lower.contains("pray") {
+            return ("Elvis Gospel & Peace", [
+                "How Great Thou Art Elvis Presley",
+                "Crying in the Chapel Elvis Presley",
+                "Peace in the Valley Elvis Presley",
+                "Amazing Grace Elvis Presley",
+                "He Touched Me Elvis Presley",
+                "Swing Down Sweet Chariot Elvis Presley",
+                "In the Garden Elvis Presley",
+                "Take My Hand Precious Lord Elvis Presley",
+                "You'll Never Walk Alone Elvis Presley",
+                "If I Can Dream Elvis Presley"
+            ])
+        } else if lower.contains("energy") || lower.contains("party") || lower.contains("rock") || lower.contains("happy") || lower.contains("dance") || lower.contains("vegas") {
+            return (title, [
+                "Burning Love Elvis Presley",
+                "Jailhouse Rock Elvis Presley",
+                "Viva Las Vegas Elvis Presley",
+                "A Little Less Conversation Elvis Presley",
+                "Hound Dog Elvis Presley",
+                "Blue Suede Shoes Elvis Presley",
+                "Rubberneckin' Elvis Presley",
+                "Suspicious Minds Elvis Presley",
+                "Bossa Nova Baby Elvis Presley",
+                "All Shook Up Elvis Presley",
+                "Promised Land Elvis Presley",
+                "Polk Salad Annie Elvis Presley"
+            ])
+        } else if lower.contains("night") || lower.contains("sultry") || lower.contains("chill") || lower.contains("love") {
+            return (title, [
+                "Fever Elvis Presley",
+                "Can't Help Falling in Love Elvis Presley",
+                "One Night Elvis Presley",
+                "Love Me Tender Elvis Presley",
+                "Steamroller Blues Elvis Presley",
+                "Reconsider Baby Elvis Presley",
+                "The Wonder of You Elvis Presley",
+                "It's Now or Never Elvis Presley",
+                "A Mess of Blues Elvis Presley",
+                "And I Love You So Elvis Presley"
+            ])
+        } else if !feeling.isEmpty {
+            return (title, [
+                "\(feeling) Elvis Presley",
+                "Elvis Presley \(feeling)",
+                "\(feeling) Lisa Marie Presley",
+                "Suspicious Minds Elvis Presley",
+                "Burning Love Elvis Presley",
+                "Can't Help Falling in Love Elvis Presley"
+            ])
+        } else {
+            return (title, [
+                "Suspicious Minds Elvis Presley",
+                "Can't Help Falling in Love Elvis Presley",
+                "Burning Love Elvis Presley",
+                "Jailhouse Rock Elvis Presley",
+                "Always on My Mind Elvis Presley",
+                "In the Ghetto Elvis Presley",
+                "Lights Out Lisa Marie Presley",
+                "Blue Christmas Elvis Presley",
+                "Viva Las Vegas Elvis Presley",
+                "How Great Thou Art Elvis Presley"
+            ])
         }
     }
 
     private func playTrack(at index: Int) {
         guard generatedTracks.indices.contains(index) else { return }
         activeIndex = index
-        let song = generatedTracks[index]
+        let track = generatedTracks[index]
 
         musicService.onTrackFinished = {
             playNextTrack()
@@ -425,9 +561,7 @@ struct PlaylistGeneratorView: View {
 
         playbackTask?.cancel()
         playbackTask = Task {
-            await musicService.lookupCatalogSong(for: song)
-            guard !Task.isCancelled else { return }
-            _ = await musicService.play(record: song)
+            _ = await musicService.playCatalogTrack(track)
         }
     }
 
@@ -442,6 +576,18 @@ struct PlaylistGeneratorView: View {
     }
 }
 
+#if canImport(FoundationModels)
+@available(iOS 26.0, *)
+@Generable
+private struct FoundationMoodPlan {
+    @Guide(description: "A short, catchy playlist title matching the user's mood.")
+    var playlistTitle: String
+
+    @Guide(description: "Specific Elvis Presley and Lisa Marie Presley song search queries in 'Song Title Artist' format.")
+    var songQueries: [String]
+}
+#endif
+
 #Preview {
-    PlaylistGeneratorView(musicService: MusicKitService(), database: SongDatabase())
+    PlaylistGeneratorView(musicService: MusicKitService())
 }

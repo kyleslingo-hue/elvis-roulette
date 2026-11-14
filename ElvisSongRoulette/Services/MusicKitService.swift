@@ -372,6 +372,216 @@ final class MusicKitService {
         }
     }
 
+    // MARK: - Direct Apple Music Playlist Search & Playback
+
+    func searchAppleMusicTracks(queries: [String], targetCount: Int) async -> [AppleMusicPlaylistTrack] {
+        authorizationStatus = MusicAuthorization.currentStatus
+        var collected: [AppleMusicPlaylistTrack] = []
+        var seenTitles = Set<String>()
+
+        for query in queries {
+            if collected.count >= targetCount { break }
+            let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard !trimmed.isEmpty else { continue }
+
+            var batch: [AppleMusicPlaylistTrack] = []
+            if authorizationStatus == .authorized {
+                do {
+                    var request = MusicCatalogSearchRequest(term: trimmed, types: [Song.self])
+                    request.limit = 10
+                    let response = try await request.response()
+                    batch = response.songs.compactMap { song in
+                        guard Self.isPresleyArtist(song.artistName) else { return nil }
+                        let year = song.releaseDate.map { Calendar.current.component(.year, from: $0) }
+                        return AppleMusicPlaylistTrack(
+                            id: song.id.rawValue,
+                            title: song.title,
+                            artistName: song.artistName,
+                            albumTitle: song.albumTitle ?? "Apple Music",
+                            releaseYear: year,
+                            duration: song.duration,
+                            artworkURL: song.artwork?.url(width: 600, height: 600),
+                            previewURL: song.previewAssets?.first?.url,
+                            catalogURL: song.url,
+                            musicKitSong: song
+                        )
+                    }
+                } catch {
+                    batch = []
+                }
+            }
+
+            if batch.isEmpty {
+                batch = await searchITunesTracks(term: trimmed)
+            }
+
+            for track in batch {
+                let norm = Self.normalizeTitle(track.title)
+                guard !norm.isEmpty, !seenTitles.contains(norm) else { continue }
+                seenTitles.insert(norm)
+                collected.append(track)
+                if collected.count >= targetCount { break }
+            }
+        }
+
+        return collected
+    }
+
+    @discardableResult
+    func playCatalogTrack(_ track: AppleMusicPlaylistTrack) async -> Bool {
+        stopPreview()
+        isLookingUp = true
+        defer { isLookingUp = false }
+
+        resolvedRecordID = track.id
+        resolvedSong = track.musicKitSong
+        resolvedTitle = track.title
+        resolvedAlbumTitle = track.albumTitle
+        artworkURL = track.artworkURL
+        previewURL = track.previewURL
+        catalogURL = track.catalogURL
+        resolvedMetadata = AppleMusicMetadata(
+            title: track.title,
+            artistName: track.artistName,
+            albumTitle: track.albumTitle,
+            releaseDate: nil,
+            genres: [],
+            composerName: nil,
+            editorialNotes: nil,
+            duration: track.duration,
+            trackNumber: nil,
+            discNumber: nil,
+            isrc: nil,
+            isFromMusicKit: track.musicKitSong != nil
+        )
+        statusBanner = nil
+
+        authorizationStatus = MusicAuthorization.currentStatus
+
+        #if !targetEnvironment(simulator)
+        if authorizationStatus == .authorized, let song = track.musicKitSong {
+            let canPlay: Bool
+            if let cached = cachedCanPlayCatalogContent {
+                canPlay = cached
+            } else {
+                let fetched = (try? await MusicSubscription.current)?.canPlayCatalogContent ?? false
+                cachedCanPlayCatalogContent = fetched
+                canPlay = fetched
+            }
+
+            if canPlay {
+                do {
+                    previewProgress = 0
+                    ApplicationMusicPlayer.shared.queue = [song]
+                    try await ApplicationMusicPlayer.shared.play()
+                    isUsingApplicationMusicPlayer = true
+                    isPlayingPreview = true
+                    startApplicationPlayerMonitor()
+                    return true
+                } catch {
+                    statusBanner = "Apple Music playback error: \(error.localizedDescription)"
+                }
+            }
+        }
+        #endif
+
+        guard let previewURL = track.previewURL else {
+            statusBanner = "No playable audio available for \(track.title)."
+            return false
+        }
+
+        startAVPlayer(url: previewURL)
+        return true
+    }
+
+    func createPlaylist(name: String, description: String, tracks: [AppleMusicPlaylistTrack]) async -> Bool {
+        if authorizationStatus != .authorized {
+            await requestAuthorization()
+        }
+        guard authorizationStatus == .authorized else { return false }
+
+        isPerformingLibraryAction = true
+        defer { isPerformingLibraryAction = false }
+
+        var catalogSongs: [Song] = []
+        for track in tracks {
+            if let song = track.musicKitSong {
+                catalogSongs.append(song)
+                continue
+            }
+            if let response = try? await MusicCatalogSearchRequest(
+                term: "\(track.title) \(track.artistName)",
+                types: [Song.self]
+            ).response(),
+               let match = response.songs.first(where: { Self.isPresleyArtist($0.artistName) }) {
+                catalogSongs.append(match)
+            }
+        }
+
+        guard !catalogSongs.isEmpty else {
+            statusBanner = "No matching Apple Music tracks found to build the playlist."
+            return false
+        }
+
+        do {
+            let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
+            let finalName = trimmedName.isEmpty ? "Elvis Mood Mix" : trimmedName
+            try await MusicLibrary.shared.createPlaylist(
+                name: finalName,
+                description: description,
+                items: catalogSongs
+            )
+            statusBanner = "Created Apple Music playlist \"\(finalName)\" (\(catalogSongs.count) tracks)."
+            return true
+        } catch {
+            statusBanner = "Playlist creation failed: \(error.localizedDescription)"
+            return false
+        }
+    }
+
+    private func searchITunesTracks(term: String) async -> [AppleMusicPlaylistTrack] {
+        guard let encoded = term.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+              let url = URL(string: "https://itunes.apple.com/search?term=\(encoded)&entity=song&limit=15&country=US") else {
+            return []
+        }
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let decoded = try JSONDecoder().decode(ITunesSearchResponse.self, from: data)
+            let iso = ISO8601DateFormatter()
+            return decoded.results.compactMap { item in
+                guard let title = item.trackName,
+                      let artist = item.artistName,
+                      Self.isPresleyArtist(artist) else {
+                    return nil
+                }
+                let artURL = item.artworkUrl100
+                    .map { $0.replacingOccurrences(of: "100x100bb", with: "600x600bb") }
+                    .flatMap(URL.init(string:))
+                let year = item.releaseDate
+                    .flatMap { iso.date(from: $0) }
+                    .map { Calendar.current.component(.year, from: $0) }
+                return AppleMusicPlaylistTrack(
+                    id: "\(title)-\(artist)-\(item.collectionName ?? "")",
+                    title: title,
+                    artistName: artist,
+                    albumTitle: item.collectionName ?? "Apple Music",
+                    releaseYear: year,
+                    duration: item.trackTimeMillis.map { TimeInterval($0) / 1000.0 },
+                    artworkURL: artURL,
+                    previewURL: item.previewUrl.flatMap(URL.init(string:)),
+                    catalogURL: item.trackViewUrl.flatMap(URL.init(string:)),
+                    musicKitSong: nil
+                )
+            }
+        } catch {
+            return []
+        }
+    }
+
+    private static func isPresleyArtist(_ artist: String) -> Bool {
+        artist.localizedCaseInsensitiveContains("elvis") || artist.localizedCaseInsensitiveContains("lisa marie")
+    }
+
     func openInAppleMusic(record: SongRecord) {
         if let catalogURL {
             UIApplication.shared.open(catalogURL)
@@ -464,6 +674,19 @@ final class MusicKitService {
         @unknown default: return "unavailable"
         }
     }
+}
+
+struct AppleMusicPlaylistTrack: Identifiable, Hashable {
+    let id: String
+    let title: String
+    let artistName: String
+    let albumTitle: String
+    let releaseYear: Int?
+    let duration: TimeInterval?
+    let artworkURL: URL?
+    let previewURL: URL?
+    let catalogURL: URL?
+    let musicKitSong: Song?
 }
 
 struct AppleMusicMetadata: Equatable {

@@ -4,7 +4,7 @@ struct ContentView: View {
     var musicService: MusicKitService
     var database: SongDatabase
 
-    @AppStorage("autoPlayOnSpin") private var autoPlayOnSpin = false
+    @AppStorage("autoPlayOnSpin") private var autoPlayOnSpin = true
     @AppStorage("includeUnavailableTracks") private var includeUnavailableTracks = true
     @AppStorage("defaultArtistFilter") private var defaultArtistFilterRaw = ArtistFilter.all.rawValue
 
@@ -13,6 +13,8 @@ struct ContentView: View {
     @State private var artistFilter: ArtistFilter = .all
     @State private var currentSong: SongRecord?
     @State private var playlistQueue: [SongRecord] = []
+    @State private var isAutoplaySessionActive = false
+    @State private var spinTask: Task<Void, Never>?
 
     @State private var showingSessionHistory = false
     @State private var showingPlaylistBuilder = false
@@ -49,11 +51,16 @@ struct ContentView: View {
         }
         .preferredColorScheme(.dark)
         .task {
+            musicService.onTrackFinished = {
+                if isAutoplaySessionActive && autoPlayOnSpin {
+                    spinTrack(startAutoplay: true)
+                }
+            }
             if currentSong == nil {
                 if let saved = ArtistFilter(rawValue: defaultArtistFilterRaw) {
                     artistFilter = saved
                 }
-                spinTrack()
+                spinTrack(startAutoplay: false)
             }
         }
         .sheet(isPresented: $showingSessionHistory) {
@@ -315,7 +322,14 @@ struct ContentView: View {
     private func previewBar(_ song: SongRecord) -> some View {
         HStack(spacing: 12) {
             Button {
-                musicService.togglePreview(for: song)
+                if musicService.isPlayingPreview {
+                    isAutoplaySessionActive = false
+                    spinTask?.cancel()
+                    musicService.stopPreview()
+                } else {
+                    isAutoplaySessionActive = autoPlayOnSpin
+                    musicService.togglePreview(for: song)
+                }
             } label: {
                 Image(systemName: musicService.isPlayingPreview ? "pause.fill" : "play.fill")
                     .font(.headline)
@@ -432,7 +446,10 @@ struct ContentView: View {
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
     }
 
-    private func spinTrack() {
+    private func spinTrack(startAutoplay: Bool = true, remainingRetries: Int = 4) {
+        isAutoplaySessionActive = startAutoplay && autoPlayOnSpin
+        spinTask?.cancel()
+
         guard let next = database.spin(
             mood: selectedMood,
             query: moodInput,
@@ -444,10 +461,14 @@ struct ContentView: View {
         withAnimation(.spring(response: 0.4, dampingFraction: 0.8)) {
             currentSong = next
         }
-        Task {
+        spinTask = Task {
             await musicService.lookupCatalogSong(for: next)
-            if autoPlayOnSpin && next.isOnAppleMusic {
-                musicService.togglePreview(for: next)
+            guard !Task.isCancelled else { return }
+            if startAutoplay && autoPlayOnSpin {
+                let started = await musicService.play(record: next)
+                if !started && !Task.isCancelled && remainingRetries > 0 {
+                    spinTrack(startAutoplay: true, remainingRetries: remainingRetries - 1)
+                }
             }
         }
     }

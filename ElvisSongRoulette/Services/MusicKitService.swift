@@ -23,11 +23,13 @@ final class MusicKitService {
     var previewProgress: Double = 0
     var statusBanner: String?
     var isPerformingLibraryAction = false
+    var onTrackFinished: (() -> Void)?
 
     private var player: AVPlayer?
     private var progressTimer: Timer?
     private var endObserver: NSObjectProtocol?
     private var isUsingApplicationMusicPlayer = false
+    private var appPlayerMonitorTask: Task<Void, Never>?
 
     var isAuthorized: Bool {
         authorizationStatus == .authorized
@@ -108,34 +110,64 @@ final class MusicKitService {
         }
 
         Task {
-            if resolvedSong == nil && previewURL == nil {
-                await lookupCatalogSong(for: record)
-            }
+            _ = await play(record: record)
+        }
+    }
 
-            #if !targetEnvironment(simulator)
-            // Try full Apple Music playback on physical devices when authorized & subscribed
-            if let song = resolvedSong,
-               let subscription = try? await MusicSubscription.current,
-               subscription.canPlayCatalogContent {
-                do {
-                    ApplicationMusicPlayer.shared.queue = [song]
-                    try await ApplicationMusicPlayer.shared.play()
-                    isUsingApplicationMusicPlayer = true
-                    isPlayingPreview = true
-                    statusBanner = nil
-                    return
-                } catch {
-                    // Fall back to AVPlayer stream below
+    @discardableResult
+    func play(record: SongRecord) async -> Bool {
+        if resolvedSong == nil && previewURL == nil {
+            await lookupCatalogSong(for: record)
+        }
+
+        #if !targetEnvironment(simulator)
+        // Try full Apple Music playback on physical devices when authorized & subscribed
+        if let song = resolvedSong,
+           let subscription = try? await MusicSubscription.current,
+           subscription.canPlayCatalogContent {
+            do {
+                ApplicationMusicPlayer.shared.queue = [song]
+                try await ApplicationMusicPlayer.shared.play()
+                isUsingApplicationMusicPlayer = true
+                isPlayingPreview = true
+                statusBanner = nil
+                startApplicationPlayerMonitor()
+                return true
+            } catch {
+                // Fall back to AVPlayer stream below
+            }
+        }
+        #endif
+
+        guard let previewURL else {
+            statusBanner = "No playable audio available for \(record.title)."
+            return false
+        }
+
+        startAVPlayer(url: previewURL)
+        return true
+    }
+
+    private func startApplicationPlayerMonitor() {
+        appPlayerMonitorTask?.cancel()
+        appPlayerMonitorTask = Task { @MainActor [weak self] in
+            var sawPlaying = false
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .milliseconds(500))
+                guard !Task.isCancelled, let self, self.isUsingApplicationMusicPlayer else { break }
+                let status = ApplicationMusicPlayer.shared.state.playbackStatus
+                if status == .playing {
+                    sawPlaying = true
+                    if let duration = self.resolvedMetadata?.duration, duration > 0 {
+                        let current = ApplicationMusicPlayer.shared.playbackTime
+                        self.previewProgress = min(max(current / duration, 0), 1)
+                    }
+                } else if sawPlaying && status == .stopped {
+                    self.stopPreview()
+                    self.onTrackFinished?()
+                    break
                 }
             }
-            #endif
-
-            guard let previewURL else {
-                statusBanner = "No playable audio available for \(record.title)."
-                return
-            }
-
-            startAVPlayer(url: previewURL)
         }
     }
 
@@ -154,6 +186,7 @@ final class MusicKitService {
         ) { [weak self] _ in
             Task { @MainActor in
                 self?.stopPreview()
+                self?.onTrackFinished?()
             }
         }
 
@@ -217,6 +250,8 @@ final class MusicKitService {
     }
 
     func stopPreview() {
+        appPlayerMonitorTask?.cancel()
+        appPlayerMonitorTask = nil
         if isUsingApplicationMusicPlayer {
             ApplicationMusicPlayer.shared.stop()
             isUsingApplicationMusicPlayer = false

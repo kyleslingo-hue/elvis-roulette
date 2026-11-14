@@ -8,7 +8,7 @@ struct SettingsView: View {
     let database: SongDatabase
     let ftdCatalog: FTDCatalog
 
-    @AppStorage("autoPlayOnSpin") private var autoPlayOnSpin = false
+    @AppStorage("autoPlayOnSpin") private var autoPlayOnSpin = true
     @AppStorage("includeUnavailableTracks") private var includeUnavailableTracks = true
     @AppStorage("defaultArtistFilter") private var defaultArtistFilterRaw = ArtistFilter.all.rawValue
 
@@ -74,8 +74,13 @@ struct SettingsView: View {
     private var roulettePreferencesSection: some View {
         Section {
             Toggle(isOn: $autoPlayOnSpin) {
-                Label("Auto-Play Audio on Spin", systemImage: "play.circle")
-                    .foregroundStyle(RetroTheme.sunCream)
+                VStack(alignment: .leading, spacing: 2) {
+                    Label("Continuous Autoplay on Spin", systemImage: "play.circle")
+                        .foregroundStyle(RetroTheme.sunCream)
+                    Text("Keeps spinning and playing tracks until you pause or stop.")
+                        .font(.caption)
+                        .foregroundStyle(RetroTheme.mutedCream)
+                }
             }
             .tint(RetroTheme.vegasGold)
 

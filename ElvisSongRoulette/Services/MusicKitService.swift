@@ -353,11 +353,14 @@ final class MusicKitService {
     }
 
     private func configureAudioSession() {
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-        } catch {
-            // Non-fatal in simulator
+        Task.detached(priority: .userInitiated) {
+            do {
+                let session = AVAudioSession.sharedInstance()
+                try session.setCategory(.playback, mode: .default)
+                try session.setActive(true)
+            } catch {
+                // Non-fatal in simulator
+            }
         }
     }
 

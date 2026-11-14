@@ -66627,5 +66627,1845 @@
       "backstory": "Cataloged in Ernst Jorgensen's 'Elvis Presley: A Life in Music' US Discography (1968)."
     },
     "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-nobody-noticed-it",
+    "title": "Nobody Noticed It",
+    "artist": "Lisa Marie Presley",
+    "album": "To Whom It May Concern",
+    "year": 2003,
+    "era": "2000s Solo Debut",
+    "moods": [
+      "melancholy",
+      "heartbroken"
+    ],
+    "keywords": [
+      "2003",
+      "concern",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "may",
+      "melancholy",
+      "nobody",
+      "noticed",
+      "presley",
+      "whom"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "Nobody Noticed It Lisa Marie Presley",
+    "session": {
+      "date": "2002",
+      "location": "Record One & Ocean Way Recording, Los Angeles, CA",
+      "producer": "Andrew Slater & Glen Ballard",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Glen Ballard",
+          "role": "Keyboards & Guitar"
+        },
+        {
+          "name": "Jon Brion",
+          "role": "Guitar & Chamberlin"
+        },
+        {
+          "name": "Matt Chamberlain",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan Rothchild",
+          "role": "Bass"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (To Whom It May Concern)",
+      "backstory": "From Lisa Marie Presley\u2019s 2003 debut album \u2018To Whom It May Concern\u2019, \u2018Nobody Noticed It\u2019 pairs reflective, confessional lyrics with atmospheric alt-rock guitars."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-so-lovely",
+    "title": "So Lovely",
+    "artist": "Lisa Marie Presley",
+    "album": "To Whom It May Concern",
+    "year": 2003,
+    "era": "2000s Solo Debut",
+    "moods": [
+      "sultry",
+      "inLove"
+    ],
+    "keywords": [
+      "2003",
+      "concern",
+      "inLove",
+      "lisa",
+      "lisa marie",
+      "lovely",
+      "may",
+      "presley",
+      "sultry",
+      "whom"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "So Lovely Lisa Marie Presley",
+    "session": {
+      "date": "2002",
+      "location": "Record One & Ocean Way Recording, Los Angeles, CA",
+      "producer": "Andrew Slater & Glen Ballard",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Glen Ballard",
+          "role": "Keyboards & Guitar"
+        },
+        {
+          "name": "Jon Brion",
+          "role": "Guitar & Chamberlin"
+        },
+        {
+          "name": "Matt Chamberlain",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan Rothchild",
+          "role": "Bass"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (To Whom It May Concern)",
+      "backstory": "Recorded for her 2003 debut \u2018To Whom It May Concern\u2019, \u2018So Lovely\u2019 highlights Lisa Marie\u2019s smoky contralto over layered West Coast studio textures."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-gone",
+    "title": "Gone",
+    "artist": "Lisa Marie Presley",
+    "album": "To Whom It May Concern",
+    "year": 2003,
+    "era": "2000s Solo Debut",
+    "moods": [
+      "heartbroken",
+      "melancholy"
+    ],
+    "keywords": [
+      "2003",
+      "concern",
+      "gone",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "may",
+      "melancholy",
+      "presley",
+      "whom"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "Gone Lisa Marie Presley",
+    "session": {
+      "date": "2002",
+      "location": "Record One & Ocean Way Recording, Los Angeles, CA",
+      "producer": "Andrew Slater & Glen Ballard",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Glen Ballard",
+          "role": "Keyboards & Guitar"
+        },
+        {
+          "name": "Jon Brion",
+          "role": "Guitar & Chamberlin"
+        },
+        {
+          "name": "Matt Chamberlain",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan Rothchild",
+          "role": "Bass"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (To Whom It May Concern)",
+      "backstory": "A brooding, mid-tempo breakup track from \u2018To Whom It May Concern\u2019 showcasing her raw, unvarnished vocal delivery."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-the-road-between",
+    "title": "The Road Between",
+    "artist": "Lisa Marie Presley",
+    "album": "To Whom It May Concern",
+    "year": 2003,
+    "era": "2000s Solo Debut",
+    "moods": [
+      "restless",
+      "melancholy"
+    ],
+    "keywords": [
+      "2003",
+      "between",
+      "concern",
+      "lisa",
+      "lisa marie",
+      "may",
+      "melancholy",
+      "presley",
+      "restless",
+      "road",
+      "the",
+      "whom"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "The Road Between Lisa Marie Presley",
+    "session": {
+      "date": "2002",
+      "location": "Record One & Ocean Way Recording, Los Angeles, CA",
+      "producer": "Andrew Slater & Glen Ballard",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Glen Ballard",
+          "role": "Keyboards & Guitar"
+        },
+        {
+          "name": "Jon Brion",
+          "role": "Guitar & Chamberlin"
+        },
+        {
+          "name": "Matt Chamberlain",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan Rothchild",
+          "role": "Bass"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (To Whom It May Concern)",
+      "backstory": "From \u2018To Whom It May Concern\u2019, \u2018The Road Between\u2019 traces themes of distance, memory, and searching across steady acoustic-electric rock grooves."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-excuse-me",
+    "title": "Excuse Me",
+    "artist": "Lisa Marie Presley",
+    "album": "To Whom It May Concern",
+    "year": 2003,
+    "era": "2000s Solo Debut",
+    "moods": [
+      "rebellious",
+      "sultry"
+    ],
+    "keywords": [
+      "2003",
+      "concern",
+      "excuse",
+      "lisa",
+      "lisa marie",
+      "may",
+      "presley",
+      "rebellious",
+      "sultry",
+      "whom"
+    ],
+    "energy": 6,
+    "appleMusicQuery": "Excuse Me Lisa Marie Presley",
+    "session": {
+      "date": "2002",
+      "location": "Record One & Ocean Way Recording, Los Angeles, CA",
+      "producer": "Andrew Slater & Glen Ballard",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Glen Ballard",
+          "role": "Keyboards & Guitar"
+        },
+        {
+          "name": "Jon Brion",
+          "role": "Guitar & Chamberlin"
+        },
+        {
+          "name": "Matt Chamberlain",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan Rothchild",
+          "role": "Bass"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (To Whom It May Concern)",
+      "backstory": "Sharp-edged and unapologetic, \u2018Excuse Me\u2019 brings defiant alt-rock swagger to \u2018To Whom It May Concern\u2019."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-better-beware",
+    "title": "Better Beware",
+    "artist": "Lisa Marie Presley",
+    "album": "To Whom It May Concern",
+    "year": 2003,
+    "era": "2000s Solo Debut",
+    "moods": [
+      "rebellious",
+      "restless"
+    ],
+    "keywords": [
+      "2003",
+      "better",
+      "beware",
+      "concern",
+      "lisa",
+      "lisa marie",
+      "may",
+      "presley",
+      "rebellious",
+      "restless",
+      "whom"
+    ],
+    "energy": 7,
+    "appleMusicQuery": "Better Beware Lisa Marie Presley",
+    "session": {
+      "date": "2002",
+      "location": "Record One & Ocean Way Recording, Los Angeles, CA",
+      "producer": "Andrew Slater & Glen Ballard",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Glen Ballard",
+          "role": "Keyboards & Guitar"
+        },
+        {
+          "name": "Jon Brion",
+          "role": "Guitar & Chamberlin"
+        },
+        {
+          "name": "Matt Chamberlain",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan Rothchild",
+          "role": "Bass"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (To Whom It May Concern)",
+      "backstory": "Driving guitars and cautionary lyrics power \u2018Better Beware\u2019 on Lisa Marie\u2019s Gold-certified 2003 debut."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-indifferent",
+    "title": "Indifferent",
+    "artist": "Lisa Marie Presley",
+    "album": "To Whom It May Concern",
+    "year": 2003,
+    "era": "2000s Solo Debut",
+    "moods": [
+      "melancholy",
+      "rebellious"
+    ],
+    "keywords": [
+      "2003",
+      "concern",
+      "indifferent",
+      "lisa",
+      "lisa marie",
+      "may",
+      "melancholy",
+      "presley",
+      "rebellious",
+      "whom"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "Indifferent Lisa Marie Presley",
+    "session": {
+      "date": "2002",
+      "location": "Record One & Ocean Way Recording, Los Angeles, CA",
+      "producer": "Andrew Slater & Glen Ballard",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Glen Ballard",
+          "role": "Keyboards & Guitar"
+        },
+        {
+          "name": "Jon Brion",
+          "role": "Guitar & Chamberlin"
+        },
+        {
+          "name": "Matt Chamberlain",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan Rothchild",
+          "role": "Bass"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (To Whom It May Concern)",
+      "backstory": "Closing out the emotional arc of \u2018To Whom It May Concern\u2019, \u2018Indifferent\u2019 balances cool detachment with simmering alt-rock tension."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-savior",
+    "title": "Savior",
+    "artist": "Lisa Marie Presley",
+    "album": "Lights Out - Single",
+    "year": 2003,
+    "era": "2000s Solo Debut",
+    "moods": [
+      "melancholy",
+      "gospelPeace"
+    ],
+    "keywords": [
+      "2003",
+      "gospelPeace",
+      "lights",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "out",
+      "presley",
+      "savior",
+      "single"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "Savior Lisa Marie Presley",
+    "session": {
+      "date": "2002",
+      "location": "Record One & Ocean Way Recording, Los Angeles, CA",
+      "producer": "Andrew Slater & Glen Ballard",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Glen Ballard",
+          "role": "Keyboards & Guitar"
+        },
+        {
+          "name": "Jon Brion",
+          "role": "Guitar & Chamberlin"
+        },
+        {
+          "name": "Matt Chamberlain",
+          "role": "Drums"
+        },
+        {
+          "name": "Dan Rothchild",
+          "role": "Bass"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "B-Side / Lights Out Single",
+      "backstory": "Released alongside her breakthrough \u2018Lights Out\u2019 single in 2003, \u2018Savior\u2019 reveals a quieter, searching side of Lisa Marie\u2019s early songwriting."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-dirty-laundry",
+    "title": "Dirty Laundry",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "rebellious",
+      "highEnergy"
+    ],
+    "keywords": [
+      "2005",
+      "dirty",
+      "highEnergy",
+      "laundry",
+      "lisa",
+      "lisa marie",
+      "now",
+      "presley",
+      "rebellious",
+      "what"
+    ],
+    "energy": 8,
+    "appleMusicQuery": "Dirty Laundry Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "US #36 Adult Top 40",
+      "backstory": "The lead single from 2005\u2019s \u2018Now What\u2019, \u2018Dirty Laundry\u2019 reimagines Don Henley\u2019s media critique with punchy alt-rock guitars and Lisa Marie\u2019s fierce, first-hand perspective."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-shine",
+    "title": "Shine",
+    "artist": "Lisa Marie Presley & P!nk",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "rebellious",
+      "highEnergy"
+    ],
+    "keywords": [
+      "2005",
+      "highEnergy",
+      "lisa",
+      "lisa marie",
+      "now",
+      "presley",
+      "rebellious",
+      "shine",
+      "what"
+    ],
+    "energy": 8,
+    "appleMusicQuery": "Shine Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Highlight (Now What)",
+      "backstory": "A powerhouse duet with P!nk from \u2018Now What\u2019, blending gritty rock vocals and defiant energy."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-high-enough",
+    "title": "High Enough",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "restless",
+      "rebellious"
+    ],
+    "keywords": [
+      "2005",
+      "enough",
+      "high",
+      "lisa",
+      "lisa marie",
+      "now",
+      "presley",
+      "rebellious",
+      "restless",
+      "what"
+    ],
+    "energy": 7,
+    "appleMusicQuery": "High Enough Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Now What)",
+      "backstory": "From 2005\u2019s \u2018Now What\u2019, \u2018High Enough\u2019 rides taut guitars and insistent drums."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-now-what",
+    "title": "Now What",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "rebellious",
+      "restless"
+    ],
+    "keywords": [
+      "2005",
+      "lisa",
+      "lisa marie",
+      "now",
+      "presley",
+      "rebellious",
+      "restless",
+      "what"
+    ],
+    "energy": 7,
+    "appleMusicQuery": "Now What Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Title Track (Now What)",
+      "backstory": "The title track of her 2005 sophomore album \u2018Now What\u2019, pairing wry attitude with muscular West Coast rock production."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-i-ll-figure-it-out",
+    "title": "I'll Figure It Out",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "melancholy",
+      "restless"
+    ],
+    "keywords": [
+      "2005",
+      "figure",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "now",
+      "out",
+      "presley",
+      "restless",
+      "what"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "I'll Figure It Out Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Now What)",
+      "backstory": "A reflective yet determined track from \u2018Now What\u2019 balancing vulnerability with resilience."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-raven",
+    "title": "Raven",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "sultry",
+      "melancholy"
+    ],
+    "keywords": [
+      "2005",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "now",
+      "presley",
+      "raven",
+      "sultry",
+      "what"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "Raven Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Now What)",
+      "backstory": "Dark and atmospheric, \u2018Raven\u2019 showcases Lisa Marie\u2019s low register over moody \u2018Now What\u2019 arrangements."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-thanx",
+    "title": "Thanx",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "rebellious",
+      "heartbroken"
+    ],
+    "keywords": [
+      "2005",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "now",
+      "presley",
+      "rebellious",
+      "thanx",
+      "what"
+    ],
+    "energy": 6,
+    "appleMusicQuery": "Thanx Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Now What)",
+      "backstory": "Biting and cathartic, \u2018Thanx\u2019 delivers sharp-tongued gratitude on 2005\u2019s \u2018Now What\u2019."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-turbulence",
+    "title": "Turbulence",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "restless",
+      "highEnergy"
+    ],
+    "keywords": [
+      "2005",
+      "highEnergy",
+      "lisa",
+      "lisa marie",
+      "now",
+      "presley",
+      "restless",
+      "turbulence",
+      "what"
+    ],
+    "energy": 8,
+    "appleMusicQuery": "Turbulence Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Now What)",
+      "backstory": "Propulsive and urgent, \u2018Turbulence\u2019 captures the restless rock edge of \u2018Now What\u2019."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-when-you-go",
+    "title": "When You Go",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "heartbroken",
+      "melancholy"
+    ],
+    "keywords": [
+      "2005",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "now",
+      "presley",
+      "what",
+      "when",
+      "you"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "When You Go Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Now What)",
+      "backstory": "A slow-burning heartbreak song from \u2018Now What\u2019 built around aching vocals and understated guitars."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-turned-to-black",
+    "title": "Turned to Black",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "melancholy",
+      "heartbroken"
+    ],
+    "keywords": [
+      "2005",
+      "black",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "now",
+      "presley",
+      "turned",
+      "what"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "Turned to Black Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Now What)",
+      "backstory": "Somber and intense, \u2018Turned to Black\u2019 leans into dark-hued alt-rock on \u2018Now What\u2019."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-here-today-gone-tomorrow",
+    "title": "Here Today, Gone Tomorrow",
+    "artist": "Lisa Marie Presley",
+    "album": "Now What",
+    "year": 2005,
+    "era": "2000s Alt-Rock",
+    "moods": [
+      "rebellious",
+      "highEnergy"
+    ],
+    "keywords": [
+      "2005",
+      "gone",
+      "here",
+      "highEnergy",
+      "lisa",
+      "lisa marie",
+      "now",
+      "presley",
+      "rebellious",
+      "today",
+      "tomorrow",
+      "what"
+    ],
+    "energy": 8,
+    "appleMusicQuery": "Here Today, Gone Tomorrow Lisa Marie Presley",
+    "session": {
+      "date": "2004",
+      "location": "The Village Recorder & Henson Studios, Los Angeles, CA",
+      "producer": "Eric Rosse",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Rusty Anderson",
+          "role": "Electric Guitar"
+        },
+        {
+          "name": "Joey Waronker",
+          "role": "Drums"
+        },
+        {
+          "name": "Paul Bushnell",
+          "role": "Bass"
+        },
+        {
+          "name": "Eric Rosse",
+          "role": "Keyboards"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Bonus / Album Track (Now What)",
+      "backstory": "Lisa Marie\u2019s spirited cover of the Ramones classic on \u2018Now What\u2019, honoring her lifelong love of punk and rock \u2019n\u2019 roll."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-storm-grace",
+    "title": "Storm & Grace",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "melancholy",
+      "gospelPeace"
+    ],
+    "keywords": [
+      "2012",
+      "gospelPeace",
+      "grace",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "presley",
+      "storm"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "Storm & Grace Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Title Track (Storm & Grace)",
+      "backstory": "Produced by T Bone Burnett at Sunset Sound, the title track of 2012\u2019s \u2018Storm & Grace\u2019 embraces Southern roots, weathered acoustic textures, and hard-won calm."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-weary",
+    "title": "Weary",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "melancholy",
+      "heartbroken"
+    ],
+    "keywords": [
+      "2012",
+      "grace",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "presley",
+      "storm",
+      "weary"
+    ],
+    "energy": 3,
+    "appleMusicQuery": "Weary Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "Co-written with Richard Hawley, \u2018Weary\u2019 is an intimate, world-weary Americana ballad anchored by T Bone Burnett\u2019s spare production."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-sticks-and-stones",
+    "title": "Sticks and Stones",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "rebellious",
+      "restless"
+    ],
+    "keywords": [
+      "2012",
+      "and",
+      "grace",
+      "lisa",
+      "lisa marie",
+      "presley",
+      "rebellious",
+      "restless",
+      "sticks",
+      "stones",
+      "storm"
+    ],
+    "energy": 6,
+    "appleMusicQuery": "Sticks and Stones Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "Swampy, rootsy, and defiant, \u2018Sticks and Stones\u2019 channels Southern gothic grit on \u2018Storm & Grace\u2019."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-close-to-the-edge",
+    "title": "Close to the Edge",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "restless",
+      "melancholy"
+    ],
+    "keywords": [
+      "2012",
+      "close",
+      "edge",
+      "grace",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "presley",
+      "restless",
+      "storm",
+      "the"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "Close to the Edge Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "Haunted by pedal steel and brooding percussion, \u2018Close to the Edge\u2019 captures the stark honesty of \u2018Storm & Grace\u2019."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-soften-the-blows",
+    "title": "Soften the Blows",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "melancholy",
+      "heartbroken"
+    ],
+    "keywords": [
+      "2012",
+      "blows",
+      "grace",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "presley",
+      "soften",
+      "storm",
+      "the"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "Soften the Blows Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "Tender and aching, \u2018Soften the Blows\u2019 lets Lisa Marie\u2019s warm, smoky voice take center stage over minimalist roots instrumentation."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-so-long",
+    "title": "So Long",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "heartbroken",
+      "melancholy"
+    ],
+    "keywords": [
+      "2012",
+      "grace",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "long",
+      "melancholy",
+      "presley",
+      "storm"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "So Long Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "A bittersweet farewell from \u2018Storm & Grace\u2019 steeped in classic country-soul phrasing."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-forgiving",
+    "title": "Forgiving",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "gospelPeace",
+      "melancholy"
+    ],
+    "keywords": [
+      "2012",
+      "forgiving",
+      "gospelPeace",
+      "grace",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "presley",
+      "storm"
+    ],
+    "energy": 3,
+    "appleMusicQuery": "Forgiving Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "Quietly redemptive, \u2018Forgiving\u2019 brings gospel-tinged warmth to the closing stretch of \u2018Storm & Grace\u2019."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-heartless",
+    "title": "Heartless",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace (Deluxe Edition)",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "heartbroken",
+      "rebellious"
+    ],
+    "keywords": [
+      "2012",
+      "deluxe",
+      "edition",
+      "grace",
+      "heartbroken",
+      "heartless",
+      "lisa",
+      "lisa marie",
+      "presley",
+      "rebellious",
+      "storm"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "Heartless Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Deluxe Edition (Storm & Grace)",
+      "backstory": "Featured on the Deluxe Edition of \u2018Storm & Grace\u2019, \u2018Heartless\u2019 pairs razor-sharp emotion with T Bone Burnett\u2019s analog roots sound."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-i-was-wrong",
+    "title": "I Was Wrong",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace (Deluxe Edition)",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "heartbroken",
+      "melancholy"
+    ],
+    "keywords": [
+      "2012",
+      "deluxe",
+      "edition",
+      "grace",
+      "heartbroken",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "presley",
+      "storm",
+      "was",
+      "wrong"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "I Was Wrong Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Deluxe Edition (Storm & Grace)",
+      "backstory": "A candid confession from the \u2018Storm & Grace (Deluxe Edition)\u2019 sessions, delivered with unadorned Southern soul."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-un-break",
+    "title": "Un-Break",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "melancholy",
+      "gospelPeace"
+    ],
+    "keywords": [
+      "2012",
+      "break",
+      "gospelPeace",
+      "grace",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "presley",
+      "storm"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "Un-Break Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "Built on resonant acoustic chords and steady percussion, \u2018Un-Break\u2019 explores healing and survival on \u2018Storm & Grace\u2019."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-how-do-you-fly-this-plane",
+    "title": "How Do You Fly This Plane?",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "restless",
+      "melancholy"
+    ],
+    "keywords": [
+      "2012",
+      "fly",
+      "grace",
+      "how",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "plane",
+      "presley",
+      "restless",
+      "storm",
+      "this",
+      "you"
+    ],
+    "energy": 5,
+    "appleMusicQuery": "How Do You Fly This Plane? Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "One of the standout Americana tracks on \u2018Storm & Grace\u2019, blending dry wit with searching vulnerability."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-storm-of-nails",
+    "title": "Storm of Nails",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "rebellious",
+      "melancholy"
+    ],
+    "keywords": [
+      "2012",
+      "grace",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "nails",
+      "presley",
+      "rebellious",
+      "storm"
+    ],
+    "energy": 6,
+    "appleMusicQuery": "Storm of Nails Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Album Track (Storm & Grace)",
+      "backstory": "Brooding and intense, \u2018Storm of Nails\u2019 delivers dark Southern imagery over T Bone Burnett\u2019s raw, analog groove."
+    },
+    "appleMusicAvailable": true
+  },
+  {
+    "id": "lisa-just-a-dream",
+    "title": "Just a Dream",
+    "artist": "Lisa Marie Presley",
+    "album": "Storm & Grace (Deluxe Edition)",
+    "year": 2012,
+    "era": "2010s Americana / Roots",
+    "moods": [
+      "melancholy",
+      "inLove"
+    ],
+    "keywords": [
+      "2012",
+      "deluxe",
+      "dream",
+      "edition",
+      "grace",
+      "inLove",
+      "just",
+      "lisa",
+      "lisa marie",
+      "melancholy",
+      "presley",
+      "storm"
+    ],
+    "energy": 4,
+    "appleMusicQuery": "Just a Dream Lisa Marie Presley",
+    "session": {
+      "date": "2011\u20132012",
+      "location": "Sunset Sound, Los Angeles, CA",
+      "producer": "T Bone Burnett",
+      "musicians": [
+        {
+          "name": "Lisa Marie Presley",
+          "role": "Vocals"
+        },
+        {
+          "name": "Blake Mills",
+          "role": "Acoustic & Slide Guitar"
+        },
+        {
+          "name": "Keefus Ciancia",
+          "role": "Piano"
+        },
+        {
+          "name": "Jay Bellerose",
+          "role": "Drums"
+        }
+      ],
+      "backingVocals": [
+        "Lisa Marie Presley"
+      ],
+      "chartPeak": "Deluxe Edition (Storm & Grace)",
+      "backstory": "A wistful Deluxe Edition highlight from \u2018Storm & Grace\u2019 showcasing Lisa Marie\u2019s understated phrasing."
+    },
+    "appleMusicAvailable": true
   }
 ]

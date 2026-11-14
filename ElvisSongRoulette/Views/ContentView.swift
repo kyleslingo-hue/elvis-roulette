@@ -3,7 +3,6 @@ import SwiftUI
 struct ContentView: View {
     var musicService: MusicKitService
     var database: SongDatabase
-    @Binding var playlistQueue: [SongRecord]
 
     @AppStorage("autoPlayOnSpin") private var autoPlayOnSpin = true
     @AppStorage("includeUnavailableTracks") private var includeUnavailableTracks = true
@@ -12,6 +11,7 @@ struct ContentView: View {
     @State private var selectedMood: Mood? = nil
     @State private var artistFilter: ArtistFilter = .all
     @State private var currentSong: SongRecord?
+    @State private var playlistQueue: [SongRecord] = []
     @State private var isAutoplaySessionActive = false
     @State private var spinTask: Task<Void, Never>?
 
@@ -68,7 +68,7 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $showingPlaylistBuilder) {
-            PlaylistQueueView(queue: $playlistQueue, musicService: musicService, database: database, isPresentedAsSheet: true)
+            PlaylistQueueView(queue: $playlistQueue, musicService: musicService)
         }
     }
 
@@ -419,6 +419,11 @@ struct ContentView: View {
 
     private func spinTrack(startAutoplay: Bool = true) {
         isAutoplaySessionActive = startAutoplay && autoPlayOnSpin
+        musicService.onTrackFinished = {
+            if isAutoplaySessionActive && autoPlayOnSpin {
+                spinTrack(startAutoplay: true)
+            }
+        }
         spinTask?.cancel()
 
         guard let next = database.spin(
@@ -458,5 +463,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(musicService: MusicKitService(), database: SongDatabase(), playlistQueue: .constant([]))
+    ContentView(musicService: MusicKitService(), database: SongDatabase())
 }

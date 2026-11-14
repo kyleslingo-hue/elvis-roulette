@@ -5,17 +5,16 @@ struct ElvisSongRouletteApp: App {
     @State private var musicService = MusicKitService()
     @State private var database = SongDatabase()
     @State private var ftdCatalog = FTDCatalog()
-    @State private var playlistQueue: [SongRecord] = []
 
     var body: some Scene {
         WindowGroup {
             TabView {
-                ContentView(musicService: musicService, database: database, playlistQueue: $playlistQueue)
+                ContentView(musicService: musicService, database: database)
                     .tabItem {
                         Label("Roulette", systemImage: "die.face.5.fill")
                     }
 
-                PlaylistQueueView(queue: $playlistQueue, musicService: musicService, database: database, isPresentedAsSheet: false)
+                PlaylistGeneratorView(musicService: musicService, database: database)
                     .tabItem {
                         Label("Playlists", systemImage: "music.note.list")
                     }

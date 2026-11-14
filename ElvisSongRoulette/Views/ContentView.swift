@@ -222,7 +222,7 @@ struct ContentView: View {
                     .tracking(1.4)
                     .foregroundStyle(song.isLisaMarie ? RetroTheme.amberGlow : RetroTheme.vegasGold)
 
-                Text(musicService.resolvedTitle ?? song.title)
+                Text(song.title)
                     .font(.system(.title2, design: .serif, weight: .bold))
                     .foregroundStyle(RetroTheme.sunCream)
                     .multilineTextAlignment(.center)

@@ -60,9 +60,9 @@ final class MusicKitService {
                     term: record.appleMusicQuery,
                     types: [Song.self]
                 )
-                request.limit = 3
+                request.limit = 10
                 let response = try await request.response()
-                if let match = response.songs.first {
+                if let match = response.songs.first(where: { Self.isMatchingSong(title: $0.title, artist: $0.artistName, for: record) }) {
                     resolvedSong = match
                     resolvedTitle = match.title
                     resolvedAlbumTitle = match.albumTitle
@@ -139,16 +139,17 @@ final class MusicKitService {
 
     private func fallbackITunesLookup(for record: SongRecord) async {
         guard let encoded = record.appleMusicQuery.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
-              let url = URL(string: "https://itunes.apple.com/search?term=\(encoded)&entity=song&limit=5&country=US") else {
+              let url = URL(string: "https://itunes.apple.com/search?term=\(encoded)&entity=song&limit=10&country=US") else {
             return
         }
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let decoded = try JSONDecoder().decode(ITunesSearchResponse.self, from: data)
-            let targetArtist = record.isLisaMarie ? "lisa marie" : "elvis"
             let match = decoded.results.first(where: {
-                ($0.artistName ?? "").lowercased().contains(targetArtist) && $0.previewUrl != nil
-            }) ?? decoded.results.first
+                Self.isMatchingSong(title: $0.trackName ?? "", artist: $0.artistName ?? "", for: record) && $0.previewUrl != nil
+            }) ?? decoded.results.first(where: {
+                Self.isMatchingSong(title: $0.trackName ?? "", artist: $0.artistName ?? "", for: record)
+            })
 
             guard let match else { return }
             if resolvedTitle == nil {
@@ -291,6 +292,24 @@ final class MusicKitService {
                 }
             }
         }
+    }
+
+    private static func isMatchingSong(title: String, artist: String, for record: SongRecord) -> Bool {
+        let targetArtist = record.isLisaMarie ? "lisa marie" : "elvis"
+        guard artist.localizedCaseInsensitiveContains(targetArtist) else {
+            return false
+        }
+        let candidateNorm = normalizeTitle(title)
+        let recordNorm = normalizeTitle(record.title)
+        guard !candidateNorm.isEmpty, !recordNorm.isEmpty else { return false }
+        return candidateNorm == recordNorm
+            || candidateNorm.hasPrefix(recordNorm)
+            || recordNorm.hasPrefix(candidateNorm)
+    }
+
+    private static func normalizeTitle(_ raw: String) -> String {
+        let stripped = raw.replacingOccurrences(of: "\\([^)]*\\)", with: "", options: .regularExpression)
+        return stripped.lowercased().filter { $0.isLetter || $0.isNumber }
     }
 
     private func statusLabel(for status: MusicAuthorization.Status) -> String {

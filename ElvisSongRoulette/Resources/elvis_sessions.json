@@ -63000,8 +63000,8 @@
     "appleMusicAvailable": true
   },
   {
-    "id": "elvis-puppet-on-a-siring-1977",
-    "title": "Puppet On A Siring",
+    "id": "elvis-puppet-on-a-string-1977",
+    "title": "Puppet On A String",
     "artist": "Elvis Presley",
     "album": "1977 RCA Discography",
     "year": 1977,
@@ -63015,10 +63015,10 @@
       "melancholy",
       "puppet",
       "restless",
-      "siring"
+      "string"
     ],
     "energy": 5,
-    "appleMusicQuery": "Puppet On A Siring Elvis Presley",
+    "appleMusicQuery": "Puppet On A String Elvis Presley",
     "session": {
       "date": "1977",
       "location": "Sun / RCA Studios (Official US Discography)",

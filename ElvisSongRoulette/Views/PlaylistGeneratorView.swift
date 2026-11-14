@@ -12,6 +12,7 @@ struct PlaylistGeneratorView: View {
     @State private var generatedTracks: [AppleMusicPlaylistTrack] = []
     @State private var activeIndex: Int? = nil
     @State private var playlistName = "Elvis Mood Mix"
+    @State private var curationSourceLabel = ""
     @State private var isGenerating = false
     @State private var savedToLibrary = false
     @State private var generationTask: Task<Void, Never>?
@@ -143,7 +144,7 @@ struct PlaylistGeneratorView: View {
             }
 
             Label(
-                "AI mood-to-playlist curation uses Apple Foundation Models and is only supported on Apple Intelligence–compatible devices.",
+                "Uses Apple Foundation Models on Apple Intelligence devices, with smart keyword & Apple Music catalog matching on all other devices.",
                 systemImage: "apple.intelligence"
             )
             .font(.caption2)
@@ -271,7 +272,7 @@ struct PlaylistGeneratorView: View {
                     Text(playlistName)
                         .font(.headline)
                         .foregroundStyle(RetroTheme.sunCream)
-                    Text("\(generatedTracks.count) tracks from Apple Music")
+                    Text(curationSourceLabel.isEmpty ? "\(generatedTracks.count) tracks from Apple Music" : "\(generatedTracks.count) tracks • \(curationSourceLabel)")
                         .font(.caption)
                         .foregroundStyle(RetroTheme.mutedCream)
                 }
@@ -402,19 +403,20 @@ struct PlaylistGeneratorView: View {
         generationTask = Task {
             defer { isGenerating = false }
 
-            let (title, queries) = await buildSearchPlan(for: trimmed, count: trackCount)
+            let (title, queries, usedAI) = await buildSearchPlan(for: trimmed, count: trackCount)
             guard !Task.isCancelled else { return }
 
             let tracks = await musicService.searchAppleMusicTracks(queries: queries, targetCount: trackCount)
             guard !Task.isCancelled else { return }
 
             playlistName = title
+            curationSourceLabel = usedAI ? "Apple Intelligence" : "Apple Music Smart Match"
             generatedTracks = tracks
             activeIndex = tracks.isEmpty ? nil : 0
         }
     }
 
-    private func buildSearchPlan(for feeling: String, count: Int) async -> (String, [String]) {
+    private func buildSearchPlan(for feeling: String, count: Int) async -> (String, [String], Bool) {
         #if canImport(FoundationModels)
         if #available(iOS 26.0, *), SystemLanguageModel.default.availability == .available {
             do {
@@ -428,15 +430,16 @@ struct PlaylistGeneratorView: View {
                 let queries = response.content.songQueries.filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
                 if !queries.isEmpty {
                     let title = response.content.playlistTitle.trimmingCharacters(in: .whitespacesAndNewlines)
-                    return (title.isEmpty ? "Elvis: \(feeling.capitalized)" : title, queries)
+                    return (title.isEmpty ? "Elvis: \(feeling.capitalized)" : title, queries, true)
                 }
             } catch {
-                // Fall back to direct Apple Music search queries below
+                // Fall back to smart Apple Music search queries below
             }
         }
         #endif
 
-        return fallbackSearchPlan(for: feeling)
+        let (title, queries) = fallbackSearchPlan(for: feeling)
+        return (title, queries, false)
     }
 
     private func fallbackSearchPlan(for feeling: String) -> (String, [String]) {
@@ -539,7 +542,13 @@ struct PlaylistGeneratorView: View {
                 "\(feeling) Lisa Marie Presley",
                 "Suspicious Minds Elvis Presley",
                 "Burning Love Elvis Presley",
-                "Can't Help Falling in Love Elvis Presley"
+                "Can't Help Falling in Love Elvis Presley",
+                "In the Ghetto Elvis Presley",
+                "Always on My Mind Elvis Presley",
+                "Jailhouse Rock Elvis Presley",
+                "Lights Out Lisa Marie Presley",
+                "Viva Las Vegas Elvis Presley",
+                "If I Can Dream Elvis Presley"
             ])
         } else {
             return (title, [

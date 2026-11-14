@@ -167,7 +167,7 @@ struct SettingsView: View {
                 Text("This is an unofficial fan project and is not affiliated with, endorsed by, or associated with Elvis Presley Enterprises (EPE), Sony Music, Authentic Brands Group (ABG), RCA Records, Capitol Records, or the Estates of Elvis Presley or Lisa Marie Presley.")
                     .font(.caption)
                     .foregroundStyle(RetroTheme.mutedCream)
-                Text("AI-powered playlist generation in the Playlists tab requires a device that supports Apple Intelligence (Apple Foundation Models).")
+                Text("AI-powered playlist generation in the Playlists tab uses Apple Foundation Models on Apple Intelligence–compatible devices, with smart keyword & Apple Music catalog matching on all other devices.")
                     .font(.caption)
                     .foregroundStyle(RetroTheme.mutedCream)
             }

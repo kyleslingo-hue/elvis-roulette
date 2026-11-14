@@ -13,6 +13,7 @@ struct OnboardingSplashView: View {
 
             VStack(spacing: 0) {
                 HoundstoothAccentStrip(tileSize: 12)
+                    .frame(height: 16)
 
                 ScrollView {
                     VStack(spacing: 24) {

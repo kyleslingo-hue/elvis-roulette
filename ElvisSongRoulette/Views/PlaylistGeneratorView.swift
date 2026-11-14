@@ -141,6 +141,13 @@ struct PlaylistGeneratorView: View {
                 }
                 .disabled(isGenerating)
             }
+
+            Label(
+                "AI mood-to-playlist curation uses Apple Foundation Models and is only supported on Apple Intelligence–compatible devices.",
+                systemImage: "apple.intelligence"
+            )
+            .font(.caption2)
+            .foregroundStyle(RetroTheme.mutedCream)
         }
         .padding(16)
         .background(RetroTheme.cardSurface)
